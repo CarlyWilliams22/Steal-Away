@@ -5,12 +5,17 @@ using UnityEngine;
 public class Player_MMovementScript : MonoBehaviour
 {
     CharacterController controller;
-    public float SPEED = 3;
+    public float SPEED = 1.5f;
+    bool sneak = false;
+    Vector3 normal;
+    Vector3 shrink;
 
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        normal = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        shrink = new Vector3(transform.localScale.x, transform.localScale.y*.5f, transform.localScale.z);
     }
 
     // Update is called once per frame
@@ -25,6 +30,24 @@ public class Player_MMovementScript : MonoBehaviour
         controller.Move(moveVec);
 
         controller.Move(moveVec);
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            sneak = !sneak;
+            if (sneak)
+            {
+                transform.localScale = shrink;
+                SPEED = .5f;
+                controller.center = new Vector3(0, 1.2f, 0);
+            }
+            else
+            {
+                transform.localScale = normal;
+                SPEED = 1.5f;
+                controller.center = new Vector3(0, .95f, 0);
+            }
+        }
+        
 
     }
 }
