@@ -13,6 +13,19 @@ public class DoorScript : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    private void Update()
+    {
+        // TODO REMOVE
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            isOpen = false;
+        }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            isOpen = true;
+        }
+    }
+
     public bool isOpen
     {
         get => animator.GetBool(ANIMATOR_PROPERTY_IS_OPEN);
