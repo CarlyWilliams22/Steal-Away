@@ -5,11 +5,13 @@ using UnityEngine;
 public class Player_MMovementScript : MonoBehaviour
 {
     CharacterController controller;
+    public GameObject camera;
     public float SPEED = 3f;
     bool sneak = false;
     Vector3 normal;
     Vector3 shrink;
     Animator animator;
+    bool currCharacter = true;
 
     // Start is called before the first frame update
     void Start()
@@ -20,44 +22,67 @@ public class Player_MMovementScript : MonoBehaviour
         shrink = new Vector3(transform.localScale.x, transform.localScale.y*.5f, transform.localScale.z);
     }
 
+    private void OnEnable()
+    {
+        Messenger.AddListener(GameEvent.SWITCH_PLAYER, Switch);
+    }
+
+    private void OnDisable()
+    {
+        Messenger.RemoveListener(GameEvent.SWITCH_PLAYER, Switch);
+    }
+
     // Update is called once per frame
     void Update()
     {
 
-
-        Vector3 moveVec = transform.rotation
-         * (Time.deltaTime * new Vector3(SPEED * Input.GetAxis("Horizontal"), 0,
-            SPEED * Input.GetAxis("Vertical")));
-
-        controller.Move(moveVec);
-
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (currCharacter)
         {
-            sneak = !sneak;
-            if (sneak)
+            Vector3 moveVec = transform.rotation
+             * (Time.deltaTime * new Vector3(SPEED * Input.GetAxis("Horizontal"), 0,
+                SPEED * Input.GetAxis("Vertical")));
+
+            controller.Move(moveVec);
+
+            if (Input.GetKeyDown(KeyCode.LeftShift))
             {
-                transform.localScale = shrink;
-                SPEED = .5f;
-                controller.center = new Vector3(0, 1.2f, 0);
-                animator.SetBool("Crouching", true);
+                sneak = !sneak;
+                if (sneak)
+                {
+                    transform.localScale = shrink;
+                    SPEED = .5f;
+                    controller.center = new Vector3(0, 1.2f, 0);
+                    animator.SetBool("Crouching", true);
+                }
+                else
+                {
+                    transform.localScale = normal;
+                    SPEED = 3;
+                    controller.center = new Vector3(0, .95f, 0);
+                    animator.SetBool("Crouching", false);
+                }
+            }
+
+            if (controller.velocity == Vector3.zero)
+            {
+                animator.SetBool("Moving", false);
             }
             else
             {
-                transform.localScale = normal;
-                SPEED = 3;
-                controller.center = new Vector3(0, .95f, 0);
-                animator.SetBool("Crouching", false);
+                animator.SetBool("Moving", true);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                Messenger.Broadcast(GameEvent.SWITCH_PLAYER);
             }
         }
-        
-        if(controller.velocity == Vector3.zero)
-        {
-            animator.SetBool("Moving", false);
-        }
-        else
-        {
-            animator.SetBool("Moving", true);
-        }
 
+    }
+
+    private void Switch()
+    {
+        currCharacter = !currCharacter;
+        camera.SetActive(currCharacter);   
     }
 }

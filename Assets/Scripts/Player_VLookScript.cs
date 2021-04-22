@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_MLookScript : MonoBehaviour
+public class Player_VLookScript : MonoBehaviour
 {
-
     float yAngle = 0;
     public GameObject head;
-    bool currCharacter = true;
+    bool currCharacter = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     private void OnEnable()
@@ -36,6 +35,11 @@ public class Player_MLookScript : MonoBehaviour
 
             transform.eulerAngles = new Vector3(0, xAngle, 0);
             head.transform.localEulerAngles = new Vector3(yAngle, 0, 0);
+
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                Messenger.Broadcast(GameEvent.SWITCH_PLAYER);
+            }
         }
     }
 
