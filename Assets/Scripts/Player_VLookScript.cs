@@ -36,11 +36,9 @@ public class Player_VLookScript : MonoBehaviour
             transform.eulerAngles = new Vector3(0, xAngle, 0);
             head.transform.localEulerAngles = new Vector3(yAngle, 0, 0);
 
-            if (Input.GetKeyDown(KeyCode.Mouse1))
-            {
-                Messenger.Broadcast(GameEvent.SWITCH_PLAYER);
-            }
         }
+
+
     }
 
     private void Switch()

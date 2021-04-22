@@ -72,10 +72,11 @@ public class Player_MMovementScript : MonoBehaviour
                 animator.SetBool("Moving", true);
             }
 
-            if (Input.GetKeyDown(KeyCode.Mouse1))
-            {
-                Messenger.Broadcast(GameEvent.SWITCH_PLAYER);
-            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            Messenger.Broadcast(GameEvent.SWITCH_PLAYER);
         }
 
     }
