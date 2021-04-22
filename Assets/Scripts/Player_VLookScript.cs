@@ -7,6 +7,7 @@ public class Player_VLookScript : MonoBehaviour
     float yAngle = 0;
     public GameObject head;
     bool currCharacter = false;
+    public GameObject _camera;
 
     // Start is called before the first frame update
     void Start()
@@ -44,5 +45,6 @@ public class Player_VLookScript : MonoBehaviour
     private void Switch()
     {
         currCharacter = !currCharacter;
+        _camera.SetActive(currCharacter);
     }
 }

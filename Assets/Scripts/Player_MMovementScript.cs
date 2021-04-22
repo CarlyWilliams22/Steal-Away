@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player_MMovementScript : MonoBehaviour
 {
     CharacterController controller;
-    public GameObject camera;
+    public GameObject _camera;
     public float SPEED = 3f;
     bool sneak = false;
     Vector3 normal;
@@ -84,6 +84,6 @@ public class Player_MMovementScript : MonoBehaviour
     private void Switch()
     {
         currCharacter = !currCharacter;
-        camera.SetActive(currCharacter);   
+        _camera.SetActive(currCharacter);   
     }
 }
