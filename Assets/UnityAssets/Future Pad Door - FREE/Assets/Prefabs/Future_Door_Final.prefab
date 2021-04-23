@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6185937851195669105}
   - component: {fileID: 6185937851194899027}
   - component: {fileID: 6185937851193768083}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Signal_Final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 6185937851193768093}
   - component: {fileID: 1948527060641019665}
   - component: {fileID: 4742042973027063838}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Right_Door_Final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 6185937851195669113}
   - component: {fileID: 8559165833620696842}
   - component: {fileID: 1167121408066180441}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Future_Door_Final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 6185937851195669115}
   - component: {fileID: 6185937851194899035}
   - component: {fileID: 6185937851193768091}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Frame_Door_Final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 6185937851193768095}
   - component: {fileID: 6858866502226785378}
   - component: {fileID: 8726063819825376757}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Left_Door_Final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 6185937851195669119}
   - component: {fileID: 6185937851194899033}
   - component: {fileID: 6185937851193768089}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: KeyLock_Keyboard_Final
   m_TagString: Untagged
   m_Icon: {fileID: 0}

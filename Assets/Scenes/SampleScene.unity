@@ -189,6 +189,49 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6820330420844697883, guid: 1a875e3481715bb469d9470d0d376345, type: 3}
   m_PrefabInstance: {fileID: 1858345894}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &54911674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 54911676}
+  - component: {fileID: 54911675}
+  m_Layer: 0
+  m_Name: DoorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &54911675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54911674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0138503f5d9e933449d60f2fe5c60d9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &54911676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54911674}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.00059884787, y: 1.0987947, z: -5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &74617419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -892,7 +935,7 @@ Camera:
   m_Depth: 13
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 9728
+    m_Bits: 140800
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 75a38336181e0de448c61c083800ccb9, type: 2}
   m_TargetDisplay: 0
@@ -948,6 +991,14 @@ PrefabInstance:
     - target: {fileID: 1825458344394520, guid: 13db0b795570e514d9ca4d905d4abb93, type: 3}
       propertyPath: m_Name
       value: Map_Display
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959600754540778, guid: 13db0b795570e514d9ca4d905d4abb93, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959600754540778, guid: 13db0b795570e514d9ca4d905d4abb93, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4270593417788664, guid: 13db0b795570e514d9ca4d905d4abb93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4939,6 +4990,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   head: {fileID: 1638277550}
   _camera: {fileID: 1956209131}
+  playerM: {fileID: 8657346636784475772}
+  miniMapCamera: {fileID: 230807998}
+  mapScreenLayer:
+    serializedVersion: 2
+    m_Bits: 16384
+  floorLayer:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1001 &1445233757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7286,7 +7345,7 @@ Camera:
   m_Depth: 15
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 17975
+    m_Bits: 149047
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
