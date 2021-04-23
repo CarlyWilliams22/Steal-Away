@@ -8,6 +8,9 @@ public class GuardMovementScript : MonoBehaviour
     NavMeshAgent agent;
     Animator animator;
     public GameObject[] patrolCheckpoints;
+    public GameObject player;
+    public GameObject head;
+    public LayerMask guardLayer;
     int nextDestIndex;
     Vector3 nextDest;
     bool patrolling, pursuing;
@@ -26,13 +29,28 @@ public class GuardMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((transform.position - nextDest).magnitude < .5)
+        if ((transform.position - nextDest).magnitude < .25)
         {
             nextDestIndex = (nextDestIndex + 1) % patrolCheckpoints.Length;
             nextDest = patrolCheckpoints[nextDestIndex].transform.position;
             agent.SetDestination(nextDest);
         }
 
+        RaycastHit hit;
+        if (Physics.Raycast(head.transform.position, Vector3.forward, Mathf.Infinity, guardLayer))
+        {
+          //  print("hit");
+         //   if (hit.collider.gameObject.layer.Equals("PlayerM"))
+            {
+                
+                pursuing = true;
+            }
+        }
+      
+        if (pursuing)
+        {
+            agent.SetDestination(player.transform.position);
+        }
 
         animator.SetBool("Patrolling", patrolling);
         animator.SetBool("Pursuing", pursuing);
