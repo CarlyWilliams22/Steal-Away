@@ -677,6 +677,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 448656, guid: 696e5bd12772e4f30a08a8fdac10df48, type: 3}
   m_PrefabInstance: {fileID: 169594217}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &171981415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6185937851196024409, guid: ea51da4cf1acfea49802848e749a5a13, type: 3}
+  m_PrefabInstance: {fileID: 1723575194}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &174639702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6450,7 +6455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: patrolCheckpoints.Array.size
-      value: 27
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: patrolCheckpoints.Array.data[0]
@@ -6543,23 +6548,23 @@ PrefabInstance:
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: patrolCheckpoints.Array.data[22]
       value: 
-      objectReference: {fileID: 981544880}
+      objectReference: {fileID: 171981415}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: patrolCheckpoints.Array.data[23]
       value: 
-      objectReference: {fileID: 2029161725}
+      objectReference: {fileID: 981544880}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: patrolCheckpoints.Array.data[24]
       value: 
-      objectReference: {fileID: 1282447406}
+      objectReference: {fileID: 2029161725}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: patrolCheckpoints.Array.data[25]
       value: 
-      objectReference: {fileID: 1729629876}
+      objectReference: {fileID: 1282447406}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: patrolCheckpoints.Array.data[26]
       value: 
-      objectReference: {fileID: 1573339110}
+      objectReference: {fileID: 1729629876}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: player
       value: 
@@ -6572,6 +6577,10 @@ PrefabInstance:
       propertyPath: guardLayer.m_Bits
       value: 8192
       objectReference: {fileID: 0}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints.Array.data[27]
+      value: 
+      objectReference: {fileID: 1573339110}
     - target: {fileID: 2268882670060742056, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: m_Speed
       value: 1
@@ -7748,7 +7757,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8657346636784475772}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -1.223, y: 0, z: 9.08}
+  m_LocalPosition: {x: -7.51, y: 0, z: 9.08}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
   - {fileID: 8657346636784174008}
@@ -8272,7 +8281,7 @@ GameObject:
   - component: {fileID: 8657346636784475773}
   m_Layer: 13
   m_Name: Player_M
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
