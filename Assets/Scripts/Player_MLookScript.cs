@@ -9,11 +9,12 @@ public class Player_MLookScript : MonoBehaviour
     public GameObject head;
     bool currCharacter = true;
     private bool isPaused;
+    private Camera _camera;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        _camera = GetComponentInChildren<Camera>();
     }
 
     private void OnEnable()
@@ -33,12 +34,38 @@ public class Player_MLookScript : MonoBehaviour
     {
         if (currCharacter && !isPaused)
         {
-            float xAngle = transform.eulerAngles.y + 5 * Input.GetAxis("Mouse X");
-            yAngle -= 5 * Input.GetAxis("Mouse Y");
-            yAngle = Mathf.Clamp(yAngle, -25, 32.75f);
+            UpdateLook();
+            UpdateClick();
+        }
+    }
 
-            transform.eulerAngles = new Vector3(0, xAngle, 0);
-            head.transform.localEulerAngles = new Vector3(yAngle, 0, 0);
+    private void UpdateLook()
+    {
+        float xAngle = transform.eulerAngles.y + 5 * Input.GetAxis("Mouse X");
+        yAngle -= 5 * Input.GetAxis("Mouse Y");
+        yAngle = Mathf.Clamp(yAngle, -25, 32.75f);
+
+        transform.eulerAngles = new Vector3(0, xAngle, 0);
+        head.transform.localEulerAngles = new Vector3(yAngle, 0, 0);
+    }
+
+    private void UpdateClick()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(_camera.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity))
+            {
+                switch(hit.collider.gameObject.tag)
+                {
+                    case "DoorKeyPad":
+                        hit.collider.GetComponentInParent<DoorScript>().OnPlayerClickKeypad();
+                        break;
+                    case "KeyCard":
+                        Messenger.Broadcast(GameEvent.OBTAINED_KEY_CARD);
+                        break;
+                }
+            }
         }
     }
 

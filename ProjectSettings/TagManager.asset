@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - DoorKeyPad
+  - KeyCard
   layers:
   - Default
   - TransparentFX
@@ -23,8 +25,6 @@ TagManager:
   - 
   - MapScreen
   - Doors
-  - 
-  - 
   - 
   - 
   - 

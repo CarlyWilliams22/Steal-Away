@@ -6,6 +6,7 @@ public class DoorManagerScript : MonoBehaviour
 {
     private static DoorManagerScript _instance = null;
     private DoorScript[] doors;
+    public bool playerHasKeyCard;
 
     public static DoorManagerScript Instance
     {
@@ -42,6 +43,21 @@ public class DoorManagerScript : MonoBehaviour
             }
         }
         return current;
+    }
+
+    private void OnEnable()
+    {
+        Messenger.AddListener(GameEvent.OBTAINED_KEY_CARD, OnObtainedKeyCard);
+    }
+
+    private void OnDisable()
+    {
+        Messenger.RemoveListener(GameEvent.OBTAINED_KEY_CARD, OnObtainedKeyCard);
+    }
+
+    private void OnObtainedKeyCard()
+    {
+        playerHasKeyCard = true;
     }
 
 }
