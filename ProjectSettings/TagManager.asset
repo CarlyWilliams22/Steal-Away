@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DoorKeyPad
   - KeyCard
+  - Guard
   layers:
   - Default
   - TransparentFX

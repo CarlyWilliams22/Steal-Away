@@ -27,6 +27,16 @@ public class GuardMovementScript : MonoBehaviour
         agent.SetDestination(nextDest);
     }
 
+    private void OnEnable()
+    {
+        Messenger.AddListener(GameEvent.ALARM_SOUNDED,Pursue);
+    }
+
+    private void OnDisable()
+    {
+        Messenger.RemoveListener(GameEvent.ALARM_SOUNDED, Pursue);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -41,25 +51,24 @@ public class GuardMovementScript : MonoBehaviour
             {
                 if ((transform.position - nextDest).magnitude < 1)
                 {
+                    if (door.isOpen)
+                    {
+                        Messenger.Broadcast(GameEvent.ALARM_SOUNDED);
+                    }
                     agent.ResetPath();
                     patrolling = false;
                     doorNext = false;
                     door.isOpen = true;
-                    StartCoroutine(GoThroughDoor());
+                    StartCoroutine(GoThroughDoor(door));
                 }
             }
         }
 
-        RaycastHit hit;
-        if (Physics.SphereCast(head.transform.position, 1, head.transform.forward, out hit, Mathf.Infinity, guardLayer))
+        //RaycastHit hit;
+        if (Physics.Raycast(head.transform.position, head.transform.forward, Mathf.Infinity, guardLayer))
         {
-            //print("hit");
-            //   if (hit.collider.gameObject.layer.Equals("PlayerM"))
             {
-
-                pursuing = true;
-                patrolling = false;
-                doorNext = false;
+                Messenger.Broadcast(GameEvent.ALARM_SOUNDED);
             }
         }
 
@@ -72,7 +81,7 @@ public class GuardMovementScript : MonoBehaviour
         animator.SetBool("Pursuing", pursuing);
     }
 
-    IEnumerator GoThroughDoor()
+    IEnumerator GoThroughDoor(DoorScript door)
     {
         yield return new WaitForSeconds(.2f);
         
@@ -81,7 +90,7 @@ public class GuardMovementScript : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
         door.isOpen = false;
-        print("Close");
+        //print("Close");
     }
 
     private void SetNextPatrolDest()
@@ -94,5 +103,12 @@ public class GuardMovementScript : MonoBehaviour
         {
             doorNext = true;
         }
+    }
+
+    private void Pursue()
+    {
+        pursuing = true;
+        patrolling = false;
+        doorNext = false;
     }
 }
