@@ -2017,7 +2017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1959600754540778, guid: 13db0b795570e514d9ca4d905d4abb93, type: 3}
       propertyPath: m_Layer
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1959600754540778, guid: 13db0b795570e514d9ca4d905d4abb93, type: 3}
       propertyPath: m_IsActive
@@ -2778,6 +2778,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a92b4e9bd08fb8409c9ee2e463f34f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disableDistance: 5
+  playerCameras:
+  - {fileID: 2112965108}
+  - {fileID: 1956209131}
 --- !u!4 &303026512
 Transform:
   m_ObjectHideFlags: 0

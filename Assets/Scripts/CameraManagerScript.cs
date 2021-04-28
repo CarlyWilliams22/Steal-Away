@@ -1,40 +1,58 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class CameraManagerScript : MonoBehaviour
 {
-    public Dictionary<GameObject, int> cameras;
+    private Dictionary<GameObject, HashSet<GameObject>> cameras;
+    public float disableDistance;
+    public GameObject[] playerCameras;
 
     private void Start()
     {
-        cameras = new Dictionary<GameObject, int>();
+        cameras = new Dictionary<GameObject, HashSet<GameObject>>();
+    }
+
+    private void Update()
+    {
+        foreach(KeyValuePair<GameObject, HashSet<GameObject>> entry in cameras)
+        {
+            entry.Key.SetActive(entry.Value.Any(monitor => playerCameras.Where(cam => cam.activeSelf).Any(player => Vector3.Distance(monitor.transform.position, player.transform.position) < disableDistance)));
+        }
     }
 
     private void OnEnable()
     {
-        Messenger.AddListener<GameObject, bool>(GameEvent.MONITOR_VISIBLE, OnMonitorVisible);
+        Messenger.AddListener<GameObject, GameObject, bool>(GameEvent.MONITOR_VISIBLE, OnMonitorVisible);
     }
 
     private void OnDisable()
     {
-        Messenger.RemoveListener<GameObject, bool>(GameEvent.MONITOR_VISIBLE, OnMonitorVisible);
+        Messenger.RemoveListener<GameObject, GameObject, bool>(GameEvent.MONITOR_VISIBLE, OnMonitorVisible);
     }
 
-    private void OnMonitorVisible(GameObject camera, bool visible)
+    private void OnMonitorVisible(GameObject camera, GameObject monitorScreen, bool visible)
     {
         if (camera)
         {
-            int count;
-            if (cameras.TryGetValue(camera, out count))
+            HashSet<GameObject> monitors;
+            if (!cameras.TryGetValue(camera, out monitors))
             {
-                cameras[camera] = visible ? count + 1 : count - 1;
+                monitors = new HashSet<GameObject>();
+                cameras[camera] = monitors;
+            }
+
+            if (visible)
+            {
+                monitors.Add(monitorScreen);
             }
             else
             {
-                cameras[camera] = visible ? 1 : 0;
+                monitors.Remove(monitorScreen);
             }
-            camera.SetActive(cameras[camera] > 0);
+
+            camera.SetActive(cameras[camera].Count > 0);
         }
     }
 }

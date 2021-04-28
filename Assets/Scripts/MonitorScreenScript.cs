@@ -8,11 +8,11 @@ public class MonitorScreenScript : MonoBehaviour
 
     private void OnBecameVisible()
     {
-        Messenger.Broadcast(GameEvent.MONITOR_VISIBLE, _camera, true);
+        Messenger.Broadcast(GameEvent.MONITOR_VISIBLE, _camera, gameObject, true);
     }
 
     private void OnBecameInvisible()
     {
-        Messenger.Broadcast(GameEvent.MONITOR_VISIBLE, _camera, false);
+        Messenger.Broadcast(GameEvent.MONITOR_VISIBLE, _camera, gameObject, false);
     }
 }
