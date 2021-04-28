@@ -4,25 +4,37 @@ using UnityEngine;
 
 public class CameraManagerScript : MonoBehaviour
 {
-    public GameObject[] vanCameras;
-    private bool _enabled = false;
+    public Dictionary<GameObject, int> cameras;
+
+    private void Start()
+    {
+        cameras = new Dictionary<GameObject, int>();
+    }
 
     private void OnEnable()
     {
-        Messenger.AddListener(GameEvent.SWITCH_PLAYER, Switch);
+        Messenger.AddListener<GameObject, bool>(GameEvent.MONITOR_VISIBLE, OnMonitorVisible);
     }
 
     private void OnDisable()
     {
-        Messenger.RemoveListener(GameEvent.SWITCH_PLAYER, Switch);
+        Messenger.RemoveListener<GameObject, bool>(GameEvent.MONITOR_VISIBLE, OnMonitorVisible);
     }
 
-    private void Switch()
+    private void OnMonitorVisible(GameObject camera, bool visible)
     {
-        _enabled = !_enabled;
-        foreach (GameObject cam in vanCameras)
+        if (camera)
         {
-            cam.SetActive(_enabled);
+            int count;
+            if (cameras.TryGetValue(camera, out count))
+            {
+                cameras[camera] = visible ? count + 1 : count - 1;
+            }
+            else
+            {
+                cameras[camera] = visible ? 1 : 0;
+            }
+            camera.SetActive(cameras[camera] > 0);
         }
     }
 }

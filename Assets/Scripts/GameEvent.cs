@@ -5,4 +5,5 @@
     public const string OBTAINED_KEY_CARD = "OBTAINED_KEY_CARD";
     public const string ALARM_SOUNDED = "ALARM_SOUNDED";
     public const string THIEF_CAUGHT = "THIEF_CAUGHT";
+    public const string MONITOR_VISIBLE = "MONITOR_VISIBLE";
 }
