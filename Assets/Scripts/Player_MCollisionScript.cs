@@ -18,12 +18,12 @@ public class Player_MCollisionScript : MonoBehaviour
         
     }
 
-    private void OnControllerColliderHit(ControllerColliderHit hit)
+    private void OnTriggerEnter(Collider other)
     {
-        print(hit.collider.gameObject.tag);
-        if (hit.collider.gameObject.tag.Equals("Guard"))
+        if (other.gameObject.tag.Equals("Guard"))
         {
             Messenger.Broadcast(GameEvent.THIEF_CAUGHT);
         }
     }
+
 }

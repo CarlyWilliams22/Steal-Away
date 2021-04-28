@@ -7,7 +7,8 @@ public class GuardMovementScript : MonoBehaviour
 {
     NavMeshAgent agent;
     Animator animator;
-    public GameObject[] patrolCheckpoints;
+    public GameObject[] patrolCheckpoints, patrolCheckpoints2;
+    GameObject[] currentPatrol;
     public GameObject player;
     public GameObject head;
     public LayerMask guardLayer;
@@ -23,8 +24,7 @@ public class GuardMovementScript : MonoBehaviour
         animator = GetComponent<Animator>();
         patrolling = true;
         nextDestIndex = 0;
-        nextDest = patrolCheckpoints[nextDestIndex].transform.position;
-        agent.SetDestination(nextDest);
+        SetNextPatrolDest();
     }
 
     private void OnEnable()
@@ -65,7 +65,7 @@ public class GuardMovementScript : MonoBehaviour
         }
 
         //RaycastHit hit;
-        if (Physics.Raycast(head.transform.position, head.transform.forward, Mathf.Infinity, guardLayer))
+        if (Physics.Raycast(head.transform.position, Vector3.forward, Mathf.Infinity, guardLayer))
         {
             {
                 Messenger.Broadcast(GameEvent.ALARM_SOUNDED);
@@ -95,8 +95,20 @@ public class GuardMovementScript : MonoBehaviour
 
     private void SetNextPatrolDest()
     {
-        nextDestIndex = (nextDestIndex + 1) % patrolCheckpoints.Length;
-        nextDest = patrolCheckpoints[nextDestIndex].transform.position;
+        nextDestIndex++;
+        if(currentPatrol == null || nextDestIndex >= currentPatrol.Length)
+        {
+            if(Random.Range(0,2) == 0)
+            {
+                currentPatrol = patrolCheckpoints;
+            }
+            else
+            {
+                currentPatrol = patrolCheckpoints2;
+            }
+            nextDestIndex = 0;
+        }
+        nextDest = currentPatrol[nextDestIndex].transform.position;
         agent.SetDestination(nextDest);
         door = DoorManagerScript.Instance.ClosestDoorToPoint(nextDest);
         if (door.transform.position == nextDest)
@@ -111,4 +123,6 @@ public class GuardMovementScript : MonoBehaviour
         patrolling = false;
         doorNext = false;
     }
+
+    
 }

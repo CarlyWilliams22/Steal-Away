@@ -425,6 +425,7 @@ GameObject:
   - component: {fileID: 54911675}
   - component: {fileID: 54911678}
   - component: {fileID: 54911677}
+  - component: {fileID: 54911679}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -457,7 +458,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &54911677
 MonoBehaviour:
@@ -485,6 +486,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1455161391}
   inGameCursor: {fileID: 127101534}
+--- !u!114 &54911679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54911674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da40f22ae00aa542915cb4d6d467b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &56240949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1480,6 +1493,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 7810fdb93000ac64ab00c2345b97634b, type: 3}
+--- !u!1 &158597844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6185937851196024409, guid: ea51da4cf1acfea49802848e749a5a13, type: 3}
+  m_PrefabInstance: {fileID: 1365827261}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &163816856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4560537467537518973, guid: 6ea1197d4cf9e4a4f9c8652d84630273, type: 3}
@@ -2960,7 +2978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343173878}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.578235, y: 1.7434483, z: 4.733304}
+  m_LocalPosition: {x: -3.09, y: 1.7434483, z: 4.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1193950483}
@@ -3100,6 +3118,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a875e3481715bb469d9470d0d376345, type: 3}
+--- !u!1 &397739774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 397739775}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &397739775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397739774}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.2000003, y: 0, z: -21.36}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &399120194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3649,6 +3697,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 0ff3c7f078c0d9a4c80e10f7a91edb29, type: 3}
+--- !u!1 &473268155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 473268156}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &473268156
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473268155}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.58, y: 0, z: -4.1400003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &478527884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3812,7 +3890,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492389510}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.56, y: 1.7434483, z: 0.29}
+  m_LocalPosition: {x: -11.35, y: 1.7434483, z: -0.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1193950483}
@@ -3882,7 +3960,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &533177944
 PrefabInstance:
@@ -3970,7 +4048,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538274984}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.3, y: 1.7434483, z: -17.1}
+  m_LocalPosition: {x: 8.07, y: 1.7434483, z: -16.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1193950483}
@@ -4516,6 +4594,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0617407bb41ab4b5ab29067dcffb6b9e, type: 3}
+--- !u!1 &621856164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621856165}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &621856165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621856164}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.67, y: 0, z: -3.3900003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &622677070
 GameObject:
   m_ObjectHideFlags: 0
@@ -5272,6 +5380,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ea1197d4cf9e4a4f9c8652d84630273, type: 3}
+--- !u!1 &710475841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 710475842}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &710475842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710475841}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.619999, y: 0, z: -14.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &713327060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5812,7 +5950,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760291814}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.52, y: 1.7434483, z: -5.66}
+  m_LocalPosition: {x: -4.48, y: 1.7434483, z: -7.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1193950483}
@@ -6061,6 +6199,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6820330420844697883, guid: 1a875e3481715bb469d9470d0d376345, type: 3}
   m_PrefabInstance: {fileID: 2014269695}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &793117917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793117918}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &793117918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793117917}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.5, y: 0, z: -21.119999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &794710024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6322,12 +6490,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823685900}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.9326315, y: -4.0529885, z: 19.145794}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -418.03323, y: -231.84, z: 31.580692}
+  m_LocalScale: {x: 1.6494846, y: 1.6494846, z: 1.6494846}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 1231096804}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &828557727 stripped
 GameObject:
@@ -6339,6 +6507,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4095821490622172, guid: 6ec01d418e191427c948b64657a7058c, type: 3}
   m_PrefabInstance: {fileID: 649386158}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &836565981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 836565982}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &836565982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836565981}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.73, y: 0, z: -8.82}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &842664458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6578,6 +6776,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 435edfcf02f5e914885013ab582ffd3f, type: 3}
+--- !u!1 &868515784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868515785}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &868515785
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868515784}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.7399998, y: 0, z: -12.85}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &869717295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6929,6 +7157,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4236530000282212, guid: 5ffb34a81ed9b0748b11b3451513f590, type: 3}
   m_PrefabInstance: {fileID: 938403494}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &919096354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 919096355}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &919096355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919096354}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.0300002, y: 0, z: -9.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &928467728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7391,7 +7649,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981544880}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.9, y: 1.7, z: -10.1}
+  m_LocalPosition: {x: 4.12, y: 1.7, z: -10.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1193950483}
@@ -7662,7 +7920,7 @@ Transform:
   - {fileID: 2122927273}
   - {fileID: 842664459}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1003318689
 GameObject:
@@ -7805,7 +8063,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1016554910
 MonoBehaviour:
@@ -8570,6 +8828,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 448656, guid: 696e5bd12772e4f30a08a8fdac10df48, type: 3}
   m_PrefabInstance: {fileID: 1181439718}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1183012778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1183012779}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1183012779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183012778}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.62, y: 0, z: -9.85}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1193950482
 GameObject:
   m_ObjectHideFlags: 0
@@ -8939,8 +9227,9 @@ RectTransform:
   m_Children:
   - {fileID: 127101535}
   - {fileID: 1455161392}
+  - {fileID: 823685902}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9511,6 +9800,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4996593761235138, guid: 683ef653b4b09b94993b7fd393c95978, type: 3}
   m_PrefabInstance: {fileID: 657382665}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1360001878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1360001879}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1360001879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360001878}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1361006034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9678,6 +9997,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ca8beedeb108a4244a2a9a423c7216c1, type: 3}
   m_PrefabInstance: {fileID: 284677830}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1415143697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1415143698}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1415143698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415143697}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.64000034, y: 0, z: -25.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1424202926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10290,6 +10639,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a875e3481715bb469d9470d0d376345, type: 3}
+--- !u!1 &1507806726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1507806727}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1507806727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507806726}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.4, y: 0, z: -24.32}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1508491589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10392,6 +10771,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d016cee24d2ccd84b958319ab3fcf57e, type: 3}
+--- !u!1 &1557562190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1557562191}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1557562191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557562190}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.38, y: 0, z: -0.1800003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1559174516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10926,6 +11335,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de205152cb80c4d49840bb1753a9cbdc, type: 3}
+--- !u!1 &1614262592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1614262593}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1614262593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614262592}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.04, y: 0, z: 0.42000008}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1616562589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6820330420844697883, guid: 1a875e3481715bb469d9470d0d376345, type: 3}
@@ -11001,6 +11440,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4301942801408678, guid: 3bcd5b4d4d38240048bb0487514cc399, type: 3}
   m_PrefabInstance: {fileID: 1931076469}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1662039940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1662039941}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1662039941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662039940}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.73, y: 0, z: -25.029999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1667420274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11521,7 +11990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729629876}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.7, y: 1.7, z: 3.6}
+  m_LocalPosition: {x: 7.93, y: 1.7, z: 4.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1193950483}
@@ -11842,7 +12311,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799274220}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.61, y: 1.7434483, z: 4.88}
+  m_LocalPosition: {x: -9.4, y: 1.7434483, z: 4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1193950483}
@@ -12292,6 +12761,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5016dee2f2df1774e9c4ea33160fca26, type: 3}
+--- !u!1 &1905908973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1905908974}
+  m_Layer: 0
+  m_Name: Patrol Checkpoint (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1905908974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905908973}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.940001, y: 0, z: -13.16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1983295497}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1908883063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12533,7 +13032,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920375004}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9417651, y: 1.7434483, z: -0.13669586}
+  m_LocalPosition: {x: 2.12, y: 1.7434483, z: 0.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1193950483}
@@ -12705,7 +13204,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1124847553550511133, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.605
+      value: -6.91
       objectReference: {fileID: 0}
     - target: {fileID: 1124847553550511133, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12876,113 +13375,117 @@ PrefabInstance:
       value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.size
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: patrolCheckpoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 1994456496}
-    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 1920375004}
-    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 343173878}
-    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 2012740349}
-    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[4]
       value: 
       objectReference: {fileID: 1799274220}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[5]
+      propertyPath: patrolCheckpoints.Array.data[1]
       value: 
       objectReference: {fileID: 492389510}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[6]
+      propertyPath: patrolCheckpoints.Array.data[2]
       value: 
       objectReference: {fileID: 1048573255}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[7]
+      propertyPath: patrolCheckpoints.Array.data[3]
       value: 
       objectReference: {fileID: 1070273624}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[8]
+      propertyPath: patrolCheckpoints.Array.data[4]
       value: 
       objectReference: {fileID: 882550290}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[9]
+      propertyPath: patrolCheckpoints.Array.data[5]
       value: 
       objectReference: {fileID: 1228057520}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[10]
+      propertyPath: patrolCheckpoints.Array.data[6]
       value: 
       objectReference: {fileID: 775283087}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[11]
+      propertyPath: patrolCheckpoints.Array.data[7]
       value: 
       objectReference: {fileID: 882550290}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[12]
+      propertyPath: patrolCheckpoints.Array.data[8]
       value: 
       objectReference: {fileID: 2025883380}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[13]
+      propertyPath: patrolCheckpoints.Array.data[9]
       value: 
       objectReference: {fileID: 983816338}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[14]
+      propertyPath: patrolCheckpoints.Array.data[10]
       value: 
       objectReference: {fileID: 760291814}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[15]
+      propertyPath: patrolCheckpoints.Array.data[11]
       value: 
       objectReference: {fileID: 1794815455}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[16]
+      propertyPath: patrolCheckpoints.Array.data[12]
       value: 
       objectReference: {fileID: 1003318689}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[17]
+      propertyPath: patrolCheckpoints.Array.data[13]
       value: 
       objectReference: {fileID: 796408100}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[18]
+      propertyPath: patrolCheckpoints.Array.data[14]
       value: 
       objectReference: {fileID: 1915852621}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[19]
+      propertyPath: patrolCheckpoints.Array.data[15]
       value: 
       objectReference: {fileID: 2019966906}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[20]
+      propertyPath: patrolCheckpoints.Array.data[16]
       value: 
       objectReference: {fileID: 1361834893}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[21]
+      propertyPath: patrolCheckpoints.Array.data[17]
       value: 
       objectReference: {fileID: 538274984}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[22]
+      propertyPath: patrolCheckpoints.Array.data[18]
       value: 
       objectReference: {fileID: 171981415}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[23]
+      propertyPath: patrolCheckpoints.Array.data[19]
       value: 
       objectReference: {fileID: 981544880}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[24]
+      propertyPath: patrolCheckpoints.Array.data[20]
       value: 
       objectReference: {fileID: 2029161725}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[25]
+      propertyPath: patrolCheckpoints.Array.data[21]
       value: 
       objectReference: {fileID: 1282447406}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
-      propertyPath: patrolCheckpoints.Array.data[26]
+      propertyPath: patrolCheckpoints.Array.data[22]
       value: 
       objectReference: {fileID: 1729629876}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints.Array.data[23]
+      value: 
+      objectReference: {fileID: 1573339110}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints.Array.data[24]
+      value: 
+      objectReference: {fileID: 1994456496}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints.Array.data[25]
+      value: 
+      objectReference: {fileID: 1920375004}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints.Array.data[26]
+      value: 
+      objectReference: {fileID: 343173878}
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: player
       value: 
@@ -12998,7 +13501,135 @@ PrefabInstance:
     - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: patrolCheckpoints.Array.data[27]
       value: 
+      objectReference: {fileID: 2012740349}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[0]
+      value: 
+      objectReference: {fileID: 1360001878}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[1]
+      value: 
+      objectReference: {fileID: 2012740349}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[2]
+      value: 
+      objectReference: {fileID: 1614262592}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[3]
+      value: 
+      objectReference: {fileID: 621856164}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[4]
+      value: 
+      objectReference: {fileID: 158597844}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[5]
+      value: 
+      objectReference: {fileID: 1183012778}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[6]
+      value: 
+      objectReference: {fileID: 1905908973}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[7]
+      value: 
+      objectReference: {fileID: 796408100}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[8]
+      value: 
+      objectReference: {fileID: 1507806726}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[9]
+      value: 
+      objectReference: {fileID: 793117917}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[10]
+      value: 
+      objectReference: {fileID: 2019966906}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[11]
+      value: 
+      objectReference: {fileID: 1662039940}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[12]
+      value: 
+      objectReference: {fileID: 171981415}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[13]
+      value: 
+      objectReference: {fileID: 710475841}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[14]
+      value: 
+      objectReference: {fileID: 836565981}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[15]
+      value: 
+      objectReference: {fileID: 1282447406}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[16]
+      value: 
+      objectReference: {fileID: 473268155}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[17]
+      value: 
+      objectReference: {fileID: 1557562190}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[18]
+      value: 
       objectReference: {fileID: 1573339110}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[19]
+      value: 
+      objectReference: {fileID: 158597844}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[20]
+      value: 
+      objectReference: {fileID: 983816338}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[21]
+      value: 
+      objectReference: {fileID: 919096354}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[22]
+      value: 
+      objectReference: {fileID: 868515784}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[23]
+      value: 
+      objectReference: {fileID: 882550290}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[24]
+      value: 
+      objectReference: {fileID: 1415143697}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[25]
+      value: 
+      objectReference: {fileID: 397739774}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[26]
+      value: 
+      objectReference: {fileID: 882550290}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints2.Array.data[27]
+      value: 
+      objectReference: {fileID: 1048573255}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints.Array.data[28]
+      value: 
+      objectReference: {fileID: 2012740349}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints.Array.data[29]
+      value: 
+      objectReference: {fileID: 2012740349}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints.Array.data[30]
+      value: 
+      objectReference: {fileID: 2012740349}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: patrolCheckpoints.Array.data[31]
+      value: 
+      objectReference: {fileID: 2012740349}
     - target: {fileID: 2268882670060742056, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: m_Speed
       value: 1
@@ -13010,6 +13641,14 @@ PrefabInstance:
     - target: {fileID: 5725543081233084787, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: m_Center.y
       value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5725543081233084787, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5725543081233084787, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: m_Radius
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
@@ -13303,6 +13942,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6820330420844697883, guid: 1a875e3481715bb469d9470d0d376345, type: 3}
   m_PrefabInstance: {fileID: 1975891726}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1983295496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1983295497}
+  m_Layer: 0
+  m_Name: GuardPatrol2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1983295497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983295496}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.13, y: 0, z: 11.88}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1360001879}
+  - {fileID: 1614262593}
+  - {fileID: 621856165}
+  - {fileID: 1183012779}
+  - {fileID: 1905908974}
+  - {fileID: 1507806727}
+  - {fileID: 793117918}
+  - {fileID: 1662039941}
+  - {fileID: 710475842}
+  - {fileID: 836565982}
+  - {fileID: 473268156}
+  - {fileID: 1557562191}
+  - {fileID: 919096355}
+  - {fileID: 868515785}
+  - {fileID: 1415143698}
+  - {fileID: 397739775}
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1993479799 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a0c3b6cdf4dc3f741b3520c94889b90b, type: 3}
@@ -13337,7 +14022,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994456496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.55, y: 1.743448, z: -1.72}
+  m_LocalPosition: {x: -4.68, y: 1.743448, z: -1.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1193950483}
@@ -13744,7 +14429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029161725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.6, y: 1.7, z: -6.1}
+  m_LocalPosition: {x: 7.88, y: 1.7, z: -5.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1193950483}
@@ -14045,6 +14730,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6820330420844697883, guid: 1a875e3481715bb469d9470d0d376345, type: 3}
   m_PrefabInstance: {fileID: 1072474126}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2085966901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1124847553551003773, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+  m_PrefabInstance: {fileID: 1941553176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &2085966906
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085966901}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &2090665086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15014,7 +15720,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8657346636784475772}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -7.51, y: 0, z: 9.08}
+  m_LocalPosition: {x: -8.31, y: 0, z: 8.37}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
   - {fileID: 8657346636784174008}
@@ -15536,6 +16242,9 @@ GameObject:
   - component: {fileID: 8657346636784475775}
   - component: {fileID: 8657346636784475774}
   - component: {fileID: 8657346636784475773}
+  - component: {fileID: 8657346636784475776}
+  - component: {fileID: 8657346636784475777}
+  - component: {fileID: 8657346636784475778}
   m_Layer: 13
   m_Name: Player_M
   m_TagString: Player
@@ -15588,6 +16297,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 2112965108}
   SPEED: 3
+--- !u!54 &8657346636784475776
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8657346636784475772}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &8657346636784475777
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8657346636784475772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.6
+  m_Height: 1.75
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.9, z: 0.02}
+--- !u!114 &8657346636784475778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8657346636784475772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073bb03204e3e4d4cb5c6715b9ee275c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8657346636784475868
 GameObject:
   m_ObjectHideFlags: 0
