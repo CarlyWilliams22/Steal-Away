@@ -778,7 +778,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 68177691}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 54911677}
+        m_TargetAssemblyTypeName: ApplicationManagerScript, Assembly-CSharp
+        m_MethodName: OnClickQuit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &68177691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3425,7 +3437,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 383461291}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 54911678}
+        m_TargetAssemblyTypeName: PauseManagerScript, Assembly-CSharp
+        m_MethodName: OnClickMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &383461291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11709,7 +11733,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1477663729}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 54911677}
+        m_TargetAssemblyTypeName: ApplicationManagerScript, Assembly-CSharp
+        m_MethodName: OnClickPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1477663729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14308,7 +14344,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1906757532}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 54911678}
+        m_TargetAssemblyTypeName: PauseManagerScript, Assembly-CSharp
+        m_MethodName: OnClickResume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1906757532
 MonoBehaviour:
   m_ObjectHideFlags: 0
