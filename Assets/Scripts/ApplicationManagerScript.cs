@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ApplicationManagerScript : MonoBehaviour
 {
-    private static string SCENE_MAIN_MENU = "MainMenuScene";
+    private static string SCENE_MAIN_MENU = "MenuScene";
     private static string SCENE_GAME = "GameScene";
 
     public void OnClickPlay()
