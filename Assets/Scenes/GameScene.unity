@@ -527,6 +527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1455161391}
   inGameCursor: {fileID: 127101534}
+  mouseSensitivitySlider: {fileID: 589687364}
 --- !u!114 &54911679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5168,7 +5169,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 54911678}
+        m_TargetAssemblyTypeName: PauseManagerScript, Assembly-CSharp
+        m_MethodName: OnMouseSensitivityChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &596897473 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7050776159031513317, guid: 696e5bd12772e4f30a08a8fdac10df48, type: 3}
@@ -11747,6 +11760,10 @@ MonoBehaviour:
   floorLayer:
     serializedVersion: 2
     m_Bits: 1024
+  mouseSensitivityMin: 2
+  mouseSensitivityMax: 15
+  yClampMin: -25
+  yClampMax: 32.75
 --- !u!1 &1431767131
 GameObject:
   m_ObjectHideFlags: 0
@@ -18582,6 +18599,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   head: {fileID: 8657346636784475868}
+  mouseSensitivityMin: 2
+  mouseSensitivityMax: 15
+  yClampMin: -25
+  yClampMax: 32.75
 --- !u!114 &8657346636784475775
 MonoBehaviour:
   m_ObjectHideFlags: 0

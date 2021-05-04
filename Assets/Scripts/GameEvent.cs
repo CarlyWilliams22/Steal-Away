@@ -6,4 +6,5 @@
     public const string ALARM_SOUNDED = "ALARM_SOUNDED";
     public const string THIEF_CAUGHT = "THIEF_CAUGHT";
     public const string MONITOR_VISIBLE = "MONITOR_VISIBLE";
+    public const string MOUSE_SENSITIVITY_CHANGE = "MOUSE_SENSITIVITY_CHANGE";
 }

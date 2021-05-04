@@ -12,20 +12,23 @@ namespace Assets.Scripts
     {
         public enum Property
         {
-            Highscore, // float
-            LastScore // float
+            Highscore,          // float
+            LastScore,          // float
+            MouseSensitivity    // float
         }
 
         private static readonly Dictionary<Property, string> propertyKeys = new Dictionary<Property, string>()
         {
             { Property.Highscore, "highscore" },
-            { Property.LastScore, "last_score" }
+            { Property.LastScore, "last_score" },
+            { Property.MouseSensitivity, "mouse_sensitivity" }
         };
 
         private static readonly Dictionary<Property, float> floatDefaults = new Dictionary<Property, float>()
         {
             { Property.Highscore, float.MaxValue },
-            { Property.LastScore, float.MaxValue }
+            { Property.LastScore, float.MaxValue },
+            { Property.MouseSensitivity, 0.5f }
         };
 
         private static readonly Dictionary<Property, int> intDefaults = new Dictionary<Property, int>()

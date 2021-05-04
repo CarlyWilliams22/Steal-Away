@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts;
 
 public class Player_VLookScript : MonoBehaviour
 {
@@ -14,23 +15,31 @@ public class Player_VLookScript : MonoBehaviour
     public LayerMask mapScreenLayer;
     public LayerMask floorLayer;
     private bool isPaused;
+    private float mouseSensitivity;
+    public float mouseSensitivityMin;
+    public float mouseSensitivityMax;
+    public float yClampMin;
+    public float yClampMax;
 
     // Start is called before the first frame update
     void Start()
     {
         cam = _camera.GetComponent<Camera>();
+        mouseSensitivity = Prefs.GetFloat(Prefs.Property.MouseSensitivity);
     }
 
     private void OnEnable()
     {
         Messenger.AddListener(GameEvent.SWITCH_PLAYER, Switch);
         Messenger.AddListener<bool>(GameEvent.PAUSE, OnPause);
+        Messenger.AddListener<float>(GameEvent.MOUSE_SENSITIVITY_CHANGE, OnMouseSensitivityChange);
     }
 
     private void OnDisable()
     {
         Messenger.RemoveListener(GameEvent.SWITCH_PLAYER, Switch);
         Messenger.RemoveListener<bool>(GameEvent.PAUSE, OnPause);
+        Messenger.RemoveListener<float>(GameEvent.MOUSE_SENSITIVITY_CHANGE, OnMouseSensitivityChange);
     }
 
     // Update is called once per frame
@@ -38,11 +47,10 @@ public class Player_VLookScript : MonoBehaviour
     {
         if (currCharacter && !isPaused)
         {
-            float xAngle = transform.eulerAngles.y + 5 * Input.GetAxis("Mouse X");
-            yAngle -= 5 * Input.GetAxis("Mouse Y");
-            yAngle = Mathf.Clamp(yAngle, -25, 32.75f);
-
-            transform.eulerAngles = new Vector3(0, xAngle, 0);
+            float sensitivity = Mathf.Lerp(mouseSensitivityMin, mouseSensitivityMax, mouseSensitivity);
+            transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X") * sensitivity, 0));
+            yAngle -= Input.GetAxis("Mouse Y") * sensitivity;
+            yAngle = Mathf.Clamp(yAngle, yClampMin, yClampMax);
             head.transform.localEulerAngles = new Vector3(yAngle, 0, 0);
 
 
@@ -94,5 +102,9 @@ public class Player_VLookScript : MonoBehaviour
     private void OnPause(bool pause)
     {
         isPaused = pause;
+    }
+    private void OnMouseSensitivityChange(float value)
+    {
+        mouseSensitivity = value;
     }
 }

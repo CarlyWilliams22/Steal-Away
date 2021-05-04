@@ -8,6 +8,12 @@ public class PauseManagerScript : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject inGameCursor;
+    public Slider mouseSensitivitySlider;
+
+    private void Start()
+    {
+        mouseSensitivitySlider.value = Prefs.GetFloat(Prefs.Property.MouseSensitivity);
+    }
 
     void Update()
     {
@@ -49,5 +55,11 @@ public class PauseManagerScript : MonoBehaviour
     {
         OnPause(false);
         ApplicationManagerScript.Instance.OnClickMainMenu();
+    }
+
+    public void OnMouseSensitivityChange()
+    {
+        Prefs.SetFloat(Prefs.Property.MouseSensitivity, mouseSensitivitySlider.value);
+        Messenger.Broadcast(GameEvent.MOUSE_SENSITIVITY_CHANGE, mouseSensitivitySlider.value);
     }
 }
