@@ -64,14 +64,6 @@ public class GuardMovementScript : MonoBehaviour
             }
         }
 
-        //RaycastHit hit;
-        if (Physics.Raycast(head.transform.position, Vector3.forward, Mathf.Infinity, guardLayer))
-        {
-            {
-                Messenger.Broadcast(GameEvent.ALARM_SOUNDED);
-            }
-        }
-
         if (pursuing)
         {
             agent.SetDestination(player.transform.position);
