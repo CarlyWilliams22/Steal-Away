@@ -17,5 +17,6 @@ public class StealableScript : MonoBehaviour
     private void OnPaintingStolen()
     {
         gameObject.SetActive(false);
+        Messenger.Broadcast(GameEvent.ALARM_SOUNDED);
     }
 }
