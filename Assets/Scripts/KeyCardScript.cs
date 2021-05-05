@@ -16,7 +16,6 @@ public class KeyCardScript : MonoBehaviour
 
     private void OnObtainedKeyCard()
     {
-        // TODO: Play grab sound (don't play it from an audio source on this object otherwise the sound will stop when the card is disabled)
         gameObject.SetActive(false);
     }
 }

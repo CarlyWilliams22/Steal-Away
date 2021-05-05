@@ -64,13 +64,18 @@ public class Player_MLookScript : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(_camera.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity))
             {
-                switch(hit.collider.gameObject.tag)
+                switch (hit.collider.gameObject.tag)
                 {
                     case "DoorKeyPad":
                         hit.collider.GetComponentInParent<DoorScript>().OnPlayerClickKeypad();
                         break;
                     case "KeyCard":
+                        // TODO sound effect
                         Messenger.Broadcast(GameEvent.OBTAINED_KEY_CARD);
+                        break;
+                    case "Stealable":
+                        // TODO sound effect
+                        Messenger.Broadcast(GameEvent.PAINTING_STOLEN);
                         break;
                 }
             }
