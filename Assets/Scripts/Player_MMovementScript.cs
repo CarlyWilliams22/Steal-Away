@@ -20,6 +20,7 @@ public class Player_MMovementScript : MonoBehaviour
         animator = GetComponent<Animator>();
         normal = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
         shrink = new Vector3(transform.localScale.x, transform.localScale.y*.5f, transform.localScale.z);
+        animator.cullingMode = AnimatorCullingMode.AlwaysAnimate;
     }
 
     private void OnEnable()
