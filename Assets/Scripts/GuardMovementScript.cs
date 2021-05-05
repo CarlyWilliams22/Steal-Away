@@ -12,6 +12,8 @@ public class GuardMovementScript : MonoBehaviour
     public GameObject player;
     public GameObject head;
     public LayerMask guardLayer;
+    public float patrolSpeed;
+    public float pursueSpeed;
     int nextDestIndex;
     Vector3 nextDest;
     bool patrolling, pursuing, doorNext;
@@ -25,6 +27,7 @@ public class GuardMovementScript : MonoBehaviour
         patrolling = true;
         nextDestIndex = 0;
         SetNextPatrolDest();
+        agent.speed = patrolSpeed;
     }
 
     private void OnEnable()
@@ -114,6 +117,7 @@ public class GuardMovementScript : MonoBehaviour
         pursuing = true;
         patrolling = false;
         doorNext = false;
+        agent.speed = pursueSpeed;
     }
 
     

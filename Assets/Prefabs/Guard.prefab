@@ -226,7 +226,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -313,6 +313,8 @@ MonoBehaviour:
   guardLayer:
     serializedVersion: 2
     m_Bits: 8192
+  patrolSpeed: 1
+  pursueSpeed: 1.5
 --- !u!136 &5725543081233084787
 CapsuleCollider:
   m_ObjectHideFlags: 0
