@@ -63,16 +63,15 @@ public class Player_MMovementScript : MonoBehaviour
                     animator.SetBool("Crouching", false);
                 }
             }
+        }
 
-            if (controller.velocity == Vector3.zero)
-            {
-                animator.SetBool("Moving", false);
-            }
-            else
-            {
-                animator.SetBool("Moving", true);
-            }
-
+        if (controller.velocity == Vector3.zero)
+        {
+            animator.SetBool("Moving", false);
+        }
+        else
+        {
+            animator.SetBool("Moving", true);
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
