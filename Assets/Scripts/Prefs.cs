@@ -26,8 +26,8 @@ namespace Assets.Scripts
 
         private static readonly Dictionary<Property, float> floatDefaults = new Dictionary<Property, float>()
         {
-            { Property.Highscore, float.MaxValue },
-            { Property.LastScore, float.MaxValue },
+            { Property.Highscore, Int64.MaxValue },
+            { Property.LastScore, Int64.MaxValue },
             { Property.MouseSensitivity, 0.5f }
         };
 

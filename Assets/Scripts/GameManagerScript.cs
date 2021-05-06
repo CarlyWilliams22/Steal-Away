@@ -31,4 +31,9 @@ public class GameManagerScript : MonoBehaviour
     {
         SceneManager.LoadScene("LosingScene");
     }
+
+    private void WinGame()
+    {
+        SceneManager.LoadScene("WinScene");
+    }
 }

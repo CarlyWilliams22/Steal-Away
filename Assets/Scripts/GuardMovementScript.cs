@@ -83,7 +83,7 @@ public class GuardMovementScript : MonoBehaviour
         patrolling = true;
         SetNextPatrolDest();
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
         door.isOpen = false;
         //print("Close");
     }
