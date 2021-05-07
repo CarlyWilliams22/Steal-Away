@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    private static readonly Color museamPlayerColor = new Color(25f / 255f, 25f / 255f, 25f / 255f);
+    private static readonly Color museumPlayerColor = new Color(25f / 255f, 25f / 255f, 25f / 255f);
     private static readonly Color vanPlayerColor = new Color(0.5f, 0.5f, 0.5f);
     private static readonly Color securityColor = new Color(200f / 255f, 200f / 255f, 200f / 255f);
     private static readonly Color minimapColor = new Color(1, 1, 1);
 
-    public enum CameraType { Security, VanPlayer, MuseamPlayer, MiniMap };
+    public enum CameraType { Security, VanPlayer, MuseumPlayer, MiniMap };
     public CameraType type;
 
     private Color originalAmbient;
@@ -28,8 +28,8 @@ public class CameraScript : MonoBehaviour
             case CameraType.VanPlayer:
                 RenderSettings.ambientLight = vanPlayerColor;
                 break;
-            case CameraType.MuseamPlayer:
-                RenderSettings.ambientLight = museamPlayerColor;
+            case CameraType.MuseumPlayer:
+                RenderSettings.ambientLight = museumPlayerColor;
                 break;
         }
     }
