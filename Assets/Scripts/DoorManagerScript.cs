@@ -41,6 +41,20 @@ public class DoorManagerScript : MonoBehaviour
         return current;
     }
 
+    public float DistanceToClosestDoor(Vector3 point)
+    {
+        float minDist = float.MaxValue, dist;
+        foreach (DoorScript door in doors)
+        {
+            dist = Vector3.Distance(door.transform.position, point);
+            if (dist < minDist)
+            {
+                minDist = dist;
+            }
+        }
+        return minDist;
+    }
+
     private void OnEnable()
     {
         Messenger.AddListener(GameEvent.OBTAINED_KEY_CARD, OnObtainedKeyCard);

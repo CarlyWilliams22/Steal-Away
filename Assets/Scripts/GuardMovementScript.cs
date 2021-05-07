@@ -18,12 +18,14 @@ public class GuardMovementScript : MonoBehaviour
     Vector3 nextDest;
     bool patrolling, pursuing, doorNext;
     DoorScript door;
+    DoorManagerScript doorManager;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        doorManager = DoorManagerScript.Instance;
         patrolling = true;
         nextDestIndex = 0;
         SetNextPatrolDest();
@@ -62,7 +64,7 @@ public class GuardMovementScript : MonoBehaviour
                     patrolling = false;
                     doorNext = false;
                     door.isOpen = true;
-                    StartCoroutine(GoThroughDoor(door));
+                    StartCoroutine(GoThroughDoorPatrol(door));
                 }
             }
         }
@@ -70,19 +72,32 @@ public class GuardMovementScript : MonoBehaviour
         if (pursuing)
         {
             agent.SetDestination(player.transform.position);
+
+            if(doorManager.DistanceToClosestDoor(transform.position) < 2)
+            {
+                StartCoroutine(GoThroughDoorPursue(doorManager.ClosestDoorToPoint(transform.position)));
+            }
         }
 
         animator.SetBool("Patrolling", patrolling);
         animator.SetBool("Pursuing", pursuing);
     }
 
-    IEnumerator GoThroughDoor(DoorScript door)
+    IEnumerator GoThroughDoorPatrol(DoorScript door)
     {
         yield return new WaitForSeconds(.2f);
         
         patrolling = true;
         SetNextPatrolDest();
 
+        yield return new WaitForSeconds(3f);
+        door.isOpen = false;
+        //print("Close");
+    }
+
+    IEnumerator GoThroughDoorPursue(DoorScript door)
+    {
+        door.isOpen = true;
         yield return new WaitForSeconds(3f);
         door.isOpen = false;
         //print("Close");
@@ -105,7 +120,7 @@ public class GuardMovementScript : MonoBehaviour
         }
         nextDest = currentPatrol[nextDestIndex].transform.position;
         agent.SetDestination(nextDest);
-        door = DoorManagerScript.Instance.ClosestDoorToPoint(nextDest);
+        door = doorManager.ClosestDoorToPoint(nextDest);
         if (door.transform.position == nextDest)
         {
             doorNext = true;
