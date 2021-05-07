@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class CameraScript : MonoBehaviour
 {
@@ -14,6 +15,14 @@ public class CameraScript : MonoBehaviour
     public GameObject securityCameraLight;
 
     private Color originalAmbient;
+    private Light[] allLights;
+    private List<bool> allLightsOrigActive;
+
+    private void Start()
+    {
+        allLights = FindObjectsOfType<Light>();
+        allLightsOrigActive = new List<bool>();
+    }
 
     private void OnPreCull()
     {
@@ -25,6 +34,7 @@ public class CameraScript : MonoBehaviour
                 RenderSettings.ambientLight = securityColor;
                 break;
             case CameraType.MiniMap:
+                DisableAllLights();
                 securityCameraLight.SetActive(true);
                 RenderSettings.ambientLight = minimapColor;
                 break;
@@ -44,9 +54,29 @@ public class CameraScript : MonoBehaviour
         switch (type)
         {
             case CameraType.Security:
-            case CameraType.MiniMap:
                 securityCameraLight.SetActive(false);
                 break;
+            case CameraType.MiniMap:
+                ResetAllLights();
+                securityCameraLight.SetActive(false);
+                break;
+        }
+    }
+
+    private void DisableAllLights()
+    {
+        allLightsOrigActive.Clear();
+        foreach (Light light in allLights)
+        {
+            allLightsOrigActive.Add(light.gameObject.activeSelf);
+            light.gameObject.SetActive(false);
+        }
+    }
+
+    private void ResetAllLights()
+    {
+        for (int i = 0; i < allLights.Count(); i++) {
+            allLights[i].gameObject.SetActive(allLightsOrigActive[i]);
         }
     }
 }
