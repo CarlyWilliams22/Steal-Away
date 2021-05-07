@@ -16,10 +16,6 @@ public class HUDManager : MonoBehaviour
     {
         startTime = Time.time;
         showIcons = true;
-
-
-        //****DON'T FORGET TO REMOVE THIS****
-        Prefs.SetAllToDefault();
     }
 
     // Update is called once per frame
