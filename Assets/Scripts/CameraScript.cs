@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    private static readonly Color museumPlayerColor = new Color(25f / 255f, 25f / 255f, 25f / 255f);
+    private static readonly Color museumPlayerColor = new Color(50f / 255f, 50f / 255f, 50f / 255f);
     private static readonly Color vanPlayerColor = new Color(0.5f, 0.5f, 0.5f);
     private static readonly Color securityColor = new Color(200f / 255f, 200f / 255f, 200f / 255f);
     private static readonly Color minimapColor = new Color(1, 1, 1);
