@@ -11,6 +11,7 @@ public class CameraScript : MonoBehaviour
 
     public enum CameraType { Security, VanPlayer, MuseumPlayer, MiniMap };
     public CameraType type;
+    public GameObject securityCameraLight;
 
     private Color originalAmbient;
 
@@ -20,9 +21,11 @@ public class CameraScript : MonoBehaviour
         switch (type)
         {
             case CameraType.Security:
+                securityCameraLight.SetActive(true);
                 RenderSettings.ambientLight = securityColor;
                 break;
             case CameraType.MiniMap:
+                securityCameraLight.SetActive(true);
                 RenderSettings.ambientLight = minimapColor;
                 break;
             case CameraType.VanPlayer:
@@ -37,5 +40,13 @@ public class CameraScript : MonoBehaviour
     private void OnPostRender()
     {
         RenderSettings.ambientLight = originalAmbient;
+
+        switch (type)
+        {
+            case CameraType.Security:
+            case CameraType.MiniMap:
+                securityCameraLight.SetActive(false);
+                break;
+        }
     }
 }
