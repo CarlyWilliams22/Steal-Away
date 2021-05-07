@@ -8,6 +8,7 @@ TagManager:
   - KeyCard
   - Guard
   - Stealable
+  - NearVan
   layers:
   - Default
   - TransparentFX

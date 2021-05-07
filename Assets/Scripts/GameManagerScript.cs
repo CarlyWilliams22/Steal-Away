@@ -5,35 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnEnable()
     {
         Messenger.AddListener(GameEvent.THIEF_CAUGHT, LoseGame);
+        Messenger.AddListener(GameEvent.WIN_GAME, WinGame);
     }
 
     private void OnDisable()
     {
-        Messenger.AddListener(GameEvent.THIEF_CAUGHT, LoseGame);
+        Messenger.RemoveListener(GameEvent.THIEF_CAUGHT, LoseGame);
+        Messenger.RemoveListener(GameEvent.WIN_GAME, WinGame);
     }
 
     private void LoseGame()
     {
-        SceneManager.LoadScene("LosingScene");
+        SceneManager.LoadScene(ApplicationManagerScript.SCENE_LOSE);
     }
 
     private void WinGame()
     {
-        SceneManager.LoadScene("WinScene");
+        SceneManager.LoadScene(ApplicationManagerScript.SCENE_WIN);
     }
 }

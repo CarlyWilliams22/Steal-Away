@@ -8,4 +8,5 @@
     public const string MONITOR_VISIBLE = "MONITOR_VISIBLE";
     public const string MOUSE_SENSITIVITY_CHANGE = "MOUSE_SENSITIVITY_CHANGE";
     public const string PAINTING_STOLEN = "PAINTING_STOLEN";
+    public const string WIN_GAME = "WIN_GAME";
 }

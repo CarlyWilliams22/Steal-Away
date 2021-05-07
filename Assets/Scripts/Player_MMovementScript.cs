@@ -12,6 +12,7 @@ public class Player_MMovementScript : MonoBehaviour
     Vector3 shrink;
     Animator animator;
     bool currCharacter = true;
+    bool hasStolenPainting;
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +27,13 @@ public class Player_MMovementScript : MonoBehaviour
     private void OnEnable()
     {
         Messenger.AddListener(GameEvent.SWITCH_PLAYER, Switch);
+        Messenger.AddListener(GameEvent.PAINTING_STOLEN, OnPaintingStolen);
     }
 
     private void OnDisable()
     {
         Messenger.RemoveListener(GameEvent.SWITCH_PLAYER, Switch);
+        Messenger.RemoveListener(GameEvent.PAINTING_STOLEN, OnPaintingStolen);
     }
 
     // Update is called once per frame
@@ -85,5 +88,23 @@ public class Player_MMovementScript : MonoBehaviour
     {
         currCharacter = !currCharacter;
         _camera.SetActive(currCharacter);   
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        switch (other.gameObject.tag)
+        {
+            case "NearVan":
+                if (hasStolenPainting)
+                {
+                    Messenger.Broadcast(GameEvent.WIN_GAME);
+                }
+                break;
+        }
+    }
+
+    private void OnPaintingStolen()
+    {
+        hasStolenPainting = true;
     }
 }

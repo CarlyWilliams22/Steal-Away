@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ApplicationManagerScript : MonoBehaviour
 {
-    private static string SCENE_MAIN_MENU = "MenuScene";
-    private static string SCENE_GAME = "GameScene";
+    public static string SCENE_MAIN_MENU = "MenuScene";
+    public static string SCENE_GAME = "GameScene";
+    public static string SCENE_LOSE = "LosingScene";
+    public static string SCENE_WIN = "WinScene";
 
     private static ApplicationManagerScript _instance = null;
 
