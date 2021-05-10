@@ -27038,6 +27038,10 @@ PrefabInstance:
       propertyPath: patrolCheckpoints2.Array.data[28]
       value: 
       objectReference: {fileID: 1048573255}
+    - target: {fileID: 1566742452722379240, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
+      propertyPath: pursueSpeed
+      value: 2.25
+      objectReference: {fileID: 0}
     - target: {fileID: 5699985818412917200, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: player
       value: 
