@@ -58,16 +58,26 @@ public class DoorManagerScript : MonoBehaviour
     private void OnEnable()
     {
         Messenger.AddListener(GameEvent.OBTAINED_KEY_CARD, OnObtainedKeyCard);
+        Messenger.AddListener(GameEvent.ALARM_SOUNDED, OnAlarmSounded);
     }
 
     private void OnDisable()
     {
         Messenger.RemoveListener(GameEvent.OBTAINED_KEY_CARD, OnObtainedKeyCard);
+        Messenger.RemoveListener(GameEvent.ALARM_SOUNDED, OnAlarmSounded);
     }
 
     private void OnObtainedKeyCard()
     {
         playerHasKeyCard = true;
+    }
+
+    private void OnAlarmSounded()
+    {
+        foreach (DoorScript door in doors)
+        {
+            door.isOpen = false;
+        }
     }
 
 }
