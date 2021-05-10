@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 
-public class MiniMapScreenScript : MonoBehaviour
+public class MonitorFXScript : MonoBehaviour
 {
     private ColorGrading colorGrading;
     private PostProcessVolume postProcessVolume;

@@ -11992,6 +11992,7 @@ GameObject:
   m_Component:
   - component: {fileID: 823685902}
   - component: {fileID: 823685901}
+  - component: {fileID: 823685903}
   m_Layer: 11
   m_Name: MonitorScreenFX
   m_TagString: Untagged
@@ -12030,6 +12031,18 @@ Transform:
   m_Father: {fileID: 1231096804}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &823685903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823685900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d9bdb25df0e344bac93948d90598d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &829482563 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4095821490622172, guid: 6ec01d418e191427c948b64657a7058c, type: 3}
