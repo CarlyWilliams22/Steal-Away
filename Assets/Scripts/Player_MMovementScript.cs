@@ -6,11 +6,13 @@ public class Player_MMovementScript : MonoBehaviour
 {
     CharacterController controller;
     public GameObject _camera;
+    public AudioClip crouchAudio;
     public float SPEED = 3f;
     bool sneak = false;
     Vector3 normal;
     Vector3 shrink;
     Animator animator;
+    AudioSource a;
     bool currCharacter = true;
     bool hasStolenPainting;
 
@@ -19,6 +21,7 @@ public class Player_MMovementScript : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
+        a = GetComponent<AudioSource>();
         normal = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
         shrink = new Vector3(transform.localScale.x, transform.localScale.y*.5f, transform.localScale.z);
         animator.cullingMode = AnimatorCullingMode.AlwaysAnimate;
@@ -57,6 +60,7 @@ public class Player_MMovementScript : MonoBehaviour
                     SPEED = .5f;
                     controller.center = new Vector3(0, 1.2f, 0);
                     animator.SetBool("Crouching", true);
+                    a.PlayOneShot(crouchAudio);
                 }
                 else
                 {
@@ -64,6 +68,7 @@ public class Player_MMovementScript : MonoBehaviour
                     SPEED = 3;
                     controller.center = new Vector3(0, .95f, 0);
                     animator.SetBool("Crouching", false);
+                    a.PlayOneShot(crouchAudio);
                 }
             }
         }
