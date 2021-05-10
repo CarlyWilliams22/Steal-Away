@@ -48,11 +48,9 @@ public class Player_MMovementScript : MonoBehaviour
 
         if (currCharacter)
         {
-            Vector3 moveVec = transform.rotation
-             * (Time.deltaTime * new Vector3(SPEED * Input.GetAxis("Horizontal"), 0,
-                SPEED * Input.GetAxis("Vertical")));
-
-            controller.Move(moveVec);
+            Vector3 moveInput = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            Vector3 moveVec = transform.rotation * Vector3.ClampMagnitude(moveInput * SPEED, SPEED);
+            controller.Move(moveVec * Time.deltaTime);
 
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
