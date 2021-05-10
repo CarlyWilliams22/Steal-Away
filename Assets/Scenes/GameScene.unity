@@ -31299,6 +31299,7 @@ MonoBehaviour:
   mouseSensitivityMax: 15
   yClampMin: -25
   yClampMax: 32.75
+  doorOpenErrorClip: {fileID: 8300000, guid: 0f10812e8b1f8f7458477f6a75a9659b, type: 3}
 --- !u!114 &8657346636784475775
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,12 +16,15 @@ public class Player_MLookScript : MonoBehaviour
     public float mouseSensitivityMax;
     public float yClampMin;
     public float yClampMax;
+    private AudioSource _audioSource;
+    public AudioClip doorOpenErrorClip;
 
     // Start is called before the first frame update
     void Start()
     {
         _camera = GetComponentInChildren<Camera>();
         mouseSensitivity = Prefs.GetFloat(Prefs.Property.MouseSensitivity);
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void OnEnable()
@@ -67,14 +70,17 @@ public class Player_MLookScript : MonoBehaviour
                 switch (hit.collider.gameObject.tag)
                 {
                     case "DoorKeyPad":
-                        hit.collider.GetComponentInParent<DoorScript>().OnPlayerClickKeypad();
+                        DoorScript door = hit.collider.GetComponentInParent<DoorScript>();
+                        door.OnPlayerClickKeypad();
+                        if (!door.isOpen && !DoorManagerScript.Instance.playerHasKeyCard)
+                        {
+                            _audioSource.PlayOneShot(doorOpenErrorClip);
+                        }
                         break;
                     case "KeyCard":
-                        // TODO sound effect
                         Messenger.Broadcast(GameEvent.OBTAINED_KEY_CARD);
                         break;
                     case "Stealable":
-                        // TODO sound effect
                         Messenger.Broadcast(GameEvent.PAINTING_STOLEN);
                         break;
                 }
