@@ -138,6 +138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8797858}
   - component: {fileID: 8797857}
+  - component: {fileID: 8797859}
   m_Layer: 0
   m_Name: Spot Light (5)
   m_TagString: Untagged
@@ -163,7 +164,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -220,6 +221,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &8797859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8797856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &14728153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -938,6 +951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 67219358}
   - component: {fileID: 67219357}
+  - component: {fileID: 67219359}
   m_Layer: 0
   m_Name: Spot Light (4)
   m_TagString: Untagged
@@ -963,7 +977,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1020,6 +1034,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &67219359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67219356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &68177688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,6 +1644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 104942745}
   - component: {fileID: 104942744}
+  - component: {fileID: 104942746}
   m_Layer: 0
   m_Name: Spot Light (19)
   m_TagString: Untagged
@@ -1643,7 +1670,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1700,6 +1727,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &104942746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104942743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &105576227
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2883,6 +2922,7 @@ GameObject:
   m_Component:
   - component: {fileID: 198290246}
   - component: {fileID: 198290245}
+  - component: {fileID: 198290247}
   m_Layer: 0
   m_Name: Spot Light (41)
   m_TagString: Untagged
@@ -2908,7 +2948,7 @@ Light:
   m_InnerSpotAngle: 15.761505
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -2965,6 +3005,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &198290247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198290244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &214358462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3053,6 +3105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 229060224}
   - component: {fileID: 229060223}
+  - component: {fileID: 229060225}
   m_Layer: 0
   m_Name: Spot Light (46)
   m_TagString: Untagged
@@ -3078,7 +3131,7 @@ Light:
   m_InnerSpotAngle: 15.761505
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -3135,6 +3188,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &229060225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229060222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &230807996
 GameObject:
   m_ObjectHideFlags: 0
@@ -3533,6 +3598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 251981200}
   - component: {fileID: 251981199}
+  - component: {fileID: 251981201}
   m_Layer: 0
   m_Name: Spot Light (23)
   m_TagString: Untagged
@@ -3558,7 +3624,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -3615,6 +3681,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &251981201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251981198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &252944970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4238733123815948, guid: 4c4afc0bec6634b3494d16d79899f5e2, type: 3}
@@ -4411,6 +4489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 319479051}
   - component: {fileID: 319479050}
+  - component: {fileID: 319479052}
   m_Layer: 0
   m_Name: Spot Light (15)
   m_TagString: Untagged
@@ -4436,7 +4515,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -4493,6 +4572,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &319479052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319479049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &320323835
 GameObject:
   m_ObjectHideFlags: 0
@@ -4503,6 +4594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 320323837}
   - component: {fileID: 320323836}
+  - component: {fileID: 320323838}
   m_Layer: 0
   m_Name: Spot Light (55)
   m_TagString: Untagged
@@ -4528,7 +4620,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -4585,6 +4677,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &320323838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320323835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &321077085
 GameObject:
   m_ObjectHideFlags: 0
@@ -4746,6 +4850,7 @@ GameObject:
   m_Component:
   - component: {fileID: 331020313}
   - component: {fileID: 331020312}
+  - component: {fileID: 331020314}
   m_Layer: 0
   m_Name: Spot Light (48)
   m_TagString: Untagged
@@ -4771,7 +4876,7 @@ Light:
   m_InnerSpotAngle: 5
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -4828,6 +4933,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &331020314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331020311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &331494360
 GameObject:
   m_ObjectHideFlags: 0
@@ -4838,6 +4955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 331494362}
   - component: {fileID: 331494361}
+  - component: {fileID: 331494363}
   m_Layer: 0
   m_Name: Spot Light (35)
   m_TagString: Untagged
@@ -4863,7 +4981,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -4920,6 +5038,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &331494363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331494360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &340440755
 GameObject:
   m_ObjectHideFlags: 0
@@ -5162,6 +5292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 351943799}
   - component: {fileID: 351943798}
+  - component: {fileID: 351943800}
   m_Layer: 0
   m_Name: Spot Light (50)
   m_TagString: Untagged
@@ -5187,7 +5318,7 @@ Light:
   m_InnerSpotAngle: 5
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -5244,6 +5375,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &351943800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351943797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &360611189 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1031450013100714, guid: be05f035c9997da4bb6eabfbef319f74, type: 3}
@@ -5559,6 +5702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 380635931}
   - component: {fileID: 380635930}
+  - component: {fileID: 380635932}
   m_Layer: 0
   m_Name: Spot Light (43)
   m_TagString: Untagged
@@ -5584,7 +5728,7 @@ Light:
   m_InnerSpotAngle: 15.761505
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -5641,6 +5785,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &380635932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380635929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &383461288
 GameObject:
   m_ObjectHideFlags: 0
@@ -5783,6 +5939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 385522976}
   - component: {fileID: 385522975}
+  - component: {fileID: 385522977}
   m_Layer: 0
   m_Name: Spot Light (47)
   m_TagString: Untagged
@@ -5808,7 +5965,7 @@ Light:
   m_InnerSpotAngle: 15.761505
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -5865,6 +6022,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &385522977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385522974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &391028788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5970,6 +6139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 398478256}
   - component: {fileID: 398478255}
+  - component: {fileID: 398478257}
   m_Layer: 0
   m_Name: Spot Light (32)
   m_TagString: Untagged
@@ -5995,7 +6165,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -6052,6 +6222,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &398478257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398478254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &399120194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6226,6 +6408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 402598473}
   - component: {fileID: 402598472}
+  - component: {fileID: 402598474}
   m_Layer: 0
   m_Name: Spot Light (20)
   m_TagString: Untagged
@@ -6251,7 +6434,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -6308,6 +6491,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &402598474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402598471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &402964947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6491,6 +6686,7 @@ GameObject:
   m_Component:
   - component: {fileID: 412015624}
   - component: {fileID: 412015623}
+  - component: {fileID: 412015625}
   m_Layer: 0
   m_Name: Spot Light (51)
   m_TagString: Untagged
@@ -6516,7 +6712,7 @@ Light:
   m_InnerSpotAngle: 5
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -6573,6 +6769,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &412015625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412015622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &418017693
 GameObject:
   m_ObjectHideFlags: 0
@@ -6751,6 +6959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 434296957}
   - component: {fileID: 434296956}
+  - component: {fileID: 434296958}
   m_Layer: 0
   m_Name: Spot Light (6)
   m_TagString: Untagged
@@ -6776,7 +6985,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -6833,6 +7042,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &434296958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434296955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &443151632 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1274222396931278, guid: 1609fc045200fb14294bfdd17cc92469, type: 3}
@@ -7775,6 +7996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 575837482}
   - component: {fileID: 575837481}
+  - component: {fileID: 575837483}
   m_Layer: 0
   m_Name: Spot Light (42)
   m_TagString: Untagged
@@ -7800,7 +8022,7 @@ Light:
   m_InnerSpotAngle: 15.761505
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -7857,6 +8079,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &575837483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575837480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &576771171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8243,6 +8477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 593777061}
   - component: {fileID: 593777060}
+  - component: {fileID: 593777062}
   m_Layer: 0
   m_Name: Spot Light (13)
   m_TagString: Untagged
@@ -8268,7 +8503,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -8325,6 +8560,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &593777062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593777059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &596897473 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7050776159031513317, guid: 696e5bd12772e4f30a08a8fdac10df48, type: 3}
@@ -8354,6 +8601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 602484929}
   - component: {fileID: 602484928}
+  - component: {fileID: 602484930}
   m_Layer: 0
   m_Name: Spot Light (33)
   m_TagString: Untagged
@@ -8379,7 +8627,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -8436,6 +8684,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &602484930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602484927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &609341240 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: d5ebfcb780598a54b830d1afcc9c9103, type: 3}
@@ -8964,6 +9224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 676387984}
   - component: {fileID: 676387983}
+  - component: {fileID: 676387985}
   m_Layer: 0
   m_Name: Spot Light (17)
   m_TagString: Untagged
@@ -8989,7 +9250,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -9046,6 +9307,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &676387985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676387982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &679761281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4180622600234506519, guid: bbd79b2d38c24144c9a7d432dfb2d48c, type: 3}
@@ -10343,6 +10616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 750705606}
   - component: {fileID: 750705605}
+  - component: {fileID: 750705607}
   m_Layer: 0
   m_Name: Spot Light (40)
   m_TagString: Untagged
@@ -10368,7 +10642,7 @@ Light:
   m_InnerSpotAngle: 15.761505
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -10425,6 +10699,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &750705607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750705604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &760291814
 GameObject:
   m_ObjectHideFlags: 0
@@ -10646,6 +10932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 775447614}
   - component: {fileID: 775447613}
+  - component: {fileID: 775447615}
   m_Layer: 0
   m_Name: Spot Light (14)
   m_TagString: Untagged
@@ -10671,7 +10958,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -10728,6 +11015,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &775447615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775447612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &776867921
 GameObject:
   m_ObjectHideFlags: 0
@@ -10738,6 +11037,7 @@ GameObject:
   m_Component:
   - component: {fileID: 776867923}
   - component: {fileID: 776867922}
+  - component: {fileID: 776867924}
   m_Layer: 0
   m_Name: Spot Light (49)
   m_TagString: Untagged
@@ -10763,7 +11063,7 @@ Light:
   m_InnerSpotAngle: 5
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -10820,6 +11120,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &776867924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776867921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &784919911
 GameObject:
   m_ObjectHideFlags: 0
@@ -10830,6 +11142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 784919913}
   - component: {fileID: 784919912}
+  - component: {fileID: 784919914}
   m_Layer: 0
   m_Name: Spot Light (53)
   m_TagString: Untagged
@@ -10855,7 +11168,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -10912,6 +11225,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &784919914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784919911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &788977935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11350,6 +11675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 813243478}
   - component: {fileID: 813243477}
+  - component: {fileID: 813243479}
   m_Layer: 0
   m_Name: Spot Light (31)
   m_TagString: Untagged
@@ -11375,7 +11701,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -11432,6 +11758,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &813243479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813243476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &813929094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4132520325593564, guid: 4f34910326e789e4f9b1781fe5d280e8, type: 3}
@@ -11510,6 +11848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 830196254}
   - component: {fileID: 830196253}
+  - component: {fileID: 830196255}
   m_Layer: 0
   m_Name: Spot Light (9)
   m_TagString: Untagged
@@ -11535,7 +11874,7 @@ Light:
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -11592,6 +11931,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &830196255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830196252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &836565981
 GameObject:
   m_ObjectHideFlags: 0
@@ -11706,6 +12057,7 @@ GameObject:
   m_Component:
   - component: {fileID: 845247826}
   - component: {fileID: 845247825}
+  - component: {fileID: 845247827}
   m_Layer: 0
   m_Name: Spot Light (28)
   m_TagString: Untagged
@@ -11731,7 +12083,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -11788,6 +12140,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &845247827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845247824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &850814053
 GameObject:
   m_ObjectHideFlags: 0
@@ -12175,6 +12539,7 @@ GameObject:
   m_Component:
   - component: {fileID: 869476964}
   - component: {fileID: 869476963}
+  - component: {fileID: 869476965}
   m_Layer: 0
   m_Name: Spot Light (38)
   m_TagString: Untagged
@@ -12200,7 +12565,7 @@ Light:
   m_InnerSpotAngle: 15.761505
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -12257,6 +12622,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &869476965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869476962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &869717295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13404,6 +13781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 975205759}
   - component: {fileID: 975205758}
+  - component: {fileID: 975205760}
   m_Layer: 0
   m_Name: Spot Light (45)
   m_TagString: Untagged
@@ -13429,7 +13807,7 @@ Light:
   m_InnerSpotAngle: 15.761505
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -13486,6 +13864,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &975205760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975205757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &977127871 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: d5ebfcb780598a54b830d1afcc9c9103, type: 3}
@@ -14528,6 +14918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1032187454}
   - component: {fileID: 1032187453}
+  - component: {fileID: 1032187455}
   m_Layer: 0
   m_Name: Spot Light (30)
   m_TagString: Untagged
@@ -14553,7 +14944,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -14610,6 +15001,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1032187455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032187452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1032963867 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1031450013100714, guid: be05f035c9997da4bb6eabfbef319f74, type: 3}
@@ -17754,6 +18157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1364095965}
   - component: {fileID: 1364095964}
+  - component: {fileID: 1364095966}
   m_Layer: 0
   m_Name: Spot Light (16)
   m_TagString: Untagged
@@ -17779,7 +18183,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -17836,6 +18240,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1364095966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364095963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1364947907
 GameObject:
   m_ObjectHideFlags: 0
@@ -18003,6 +18419,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1374551669}
   - component: {fileID: 1374551668}
+  - component: {fileID: 1374551670}
   m_Layer: 0
   m_Name: Spot Light (18)
   m_TagString: Untagged
@@ -18028,7 +18445,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -18085,6 +18502,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1374551670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374551667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1375374945 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1925139830302236, guid: 69218bbca8d800c4bb9d56d77816fe24, type: 3}
@@ -18123,6 +18552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1405489881}
   - component: {fileID: 1405489880}
+  - component: {fileID: 1405489882}
   m_Layer: 0
   m_Name: Spot Light (27)
   m_TagString: Untagged
@@ -18148,7 +18578,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -18205,6 +18635,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1405489882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405489879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1411509981 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ca8beedeb108a4244a2a9a423c7216c1, type: 3}
@@ -18329,6 +18771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1419719910}
   - component: {fileID: 1419719909}
+  - component: {fileID: 1419719911}
   m_Layer: 0
   m_Name: Spot Light (22)
   m_TagString: Untagged
@@ -18354,7 +18797,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -18411,6 +18854,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1419719911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419719908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1424202926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19288,6 +19743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1470259050}
   - component: {fileID: 1470259049}
+  - component: {fileID: 1470259051}
   m_Layer: 0
   m_Name: Spot Light (44)
   m_TagString: Untagged
@@ -19313,7 +19769,7 @@ Light:
   m_InnerSpotAngle: 15.761505
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -19370,6 +19826,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1470259051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470259048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1474534266 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 459664, guid: 170fcf4e078c4fb4eb18e6664e4d909b, type: 3}
@@ -19635,6 +20103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1486887846}
   - component: {fileID: 1486887845}
+  - component: {fileID: 1486887847}
   m_Layer: 0
   m_Name: Spot Light (11)
   m_TagString: Untagged
@@ -19660,7 +20129,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -19717,6 +20186,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1486887847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486887844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1490517388 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7050776159031513317, guid: 696e5bd12772e4f30a08a8fdac10df48, type: 3}
@@ -19993,6 +20474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1523208625}
   - component: {fileID: 1523208624}
+  - component: {fileID: 1523208626}
   m_Layer: 0
   m_Name: Spot Light (8)
   m_TagString: Untagged
@@ -20018,7 +20500,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -20075,6 +20557,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1523208626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523208623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1530951343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20198,6 +20692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1530960923}
   - component: {fileID: 1530960922}
+  - component: {fileID: 1530960924}
   m_Layer: 0
   m_Name: Spot Light (25)
   m_TagString: Untagged
@@ -20223,7 +20718,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -20280,6 +20775,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1530960924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530960921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1533501645
 GameObject:
   m_ObjectHideFlags: 0
@@ -20290,6 +20797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1533501647}
   - component: {fileID: 1533501646}
+  - component: {fileID: 1533501648}
   m_Layer: 0
   m_Name: Spot Light (12)
   m_TagString: Untagged
@@ -20315,7 +20823,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -20372,6 +20880,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1533501648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533501645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1541508280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20919,6 +21439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1571999975}
   - component: {fileID: 1571999974}
+  - component: {fileID: 1571999976}
   m_Layer: 0
   m_Name: Spot Light (52)
   m_TagString: Untagged
@@ -20944,7 +21465,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -21001,6 +21522,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1571999976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571999973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1573339110 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6185937851196024409, guid: ea51da4cf1acfea49802848e749a5a13, type: 3}
@@ -21884,6 +22417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1646619157}
   - component: {fileID: 1646619156}
+  - component: {fileID: 1646619158}
   m_Layer: 0
   m_Name: Spot Light (29)
   m_TagString: Untagged
@@ -21909,7 +22443,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -21966,6 +22500,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1646619158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646619155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1650482288 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4301942801408678, guid: 3bcd5b4d4d38240048bb0487514cc399, type: 3}
@@ -22523,6 +23069,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1707857771}
   - component: {fileID: 1707857770}
+  - component: {fileID: 1707857772}
   m_Layer: 0
   m_Name: Spot Light (39)
   m_TagString: Untagged
@@ -22548,7 +23095,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -22605,6 +23152,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1707857772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707857769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1717439012 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6820330420844697883, guid: 1a875e3481715bb469d9470d0d376345, type: 3}
@@ -22762,6 +23321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1740629902}
   - component: {fileID: 1740629901}
+  - component: {fileID: 1740629903}
   m_Layer: 0
   m_Name: Spot Light (34)
   m_TagString: Untagged
@@ -22787,7 +23347,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -22844,6 +23404,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1740629903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740629900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1747450649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23049,6 +23621,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1775425576}
   - component: {fileID: 1775425575}
+  - component: {fileID: 1775425577}
   m_Layer: 0
   m_Name: Spot Light (37)
   m_TagString: Untagged
@@ -23074,7 +23647,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -23131,6 +23704,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1775425577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775425574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1779903967 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6820330420844697883, guid: 1a875e3481715bb469d9470d0d376345, type: 3}
@@ -23448,6 +24033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1801747083}
   - component: {fileID: 1801747082}
+  - component: {fileID: 1801747084}
   m_Layer: 0
   m_Name: Spot Light (54)
   m_TagString: Untagged
@@ -23473,7 +24059,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -23530,6 +24116,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1801747084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801747081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1808012291
 GameObject:
   m_ObjectHideFlags: 0
@@ -25122,6 +25720,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1931494501}
   - component: {fileID: 1931494500}
+  - component: {fileID: 1931494502}
   m_Layer: 0
   m_Name: Spot Light (24)
   m_TagString: Untagged
@@ -25147,7 +25746,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -25204,6 +25803,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1931494502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931494499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1931739803 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4804184306378262, guid: 5e6c0a296760d204c9e34091c18540fd, type: 3}
@@ -25646,7 +26257,7 @@ PrefabInstance:
       objectReference: {fileID: 8657346636784173596}
     - target: {fileID: 5699985818412917200, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc621947cdea9f8498bbab02f0b63412, type: 3}
@@ -25981,6 +26592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1957873239}
   - component: {fileID: 1957873238}
+  - component: {fileID: 1957873240}
   m_Layer: 0
   m_Name: Spot Light (21)
   m_TagString: Untagged
@@ -26006,7 +26618,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -26063,6 +26675,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1957873240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957873237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1959944732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26139,6 +26763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1963543656}
   - component: {fileID: 1963543655}
+  - component: {fileID: 1963543657}
   m_Layer: 0
   m_Name: Spot Light (10)
   m_TagString: Untagged
@@ -26164,7 +26789,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -26221,6 +26846,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1963543657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963543654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1972263297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6820330420844697883, guid: 1a875e3481715bb469d9470d0d376345, type: 3}
@@ -26497,6 +27134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1995761797}
   - component: {fileID: 1995761796}
+  - component: {fileID: 1995761798}
   m_Layer: 0
   m_Name: Spot Light (26)
   m_TagString: Untagged
@@ -26522,7 +27160,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -26579,6 +27217,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1995761798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995761795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2000686045
 GameObject:
   m_ObjectHideFlags: 0
@@ -26589,6 +27239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2000686047}
   - component: {fileID: 2000686046}
+  - component: {fileID: 2000686048}
   m_Layer: 0
   m_Name: Spot Light (36)
   m_TagString: Untagged
@@ -26614,7 +27265,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -26671,6 +27322,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &2000686048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000686045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2000860530
 GameObject:
   m_ObjectHideFlags: 0
@@ -26681,6 +27344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2000860532}
   - component: {fileID: 2000860531}
+  - component: {fileID: 2000860533}
   m_Layer: 0
   m_Name: Spot Light (7)
   m_TagString: Untagged
@@ -26706,7 +27370,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -26763,6 +27427,18 @@ Transform:
   m_Father: {fileID: 1185576946}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &2000860533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000860530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e3d9533839d214199ff05b75b2dc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2004044704 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4112223443246871938, guid: 425c1d4a9cce2a541aa3c2b22b2d4fc6, type: 3}
