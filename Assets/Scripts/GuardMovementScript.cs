@@ -7,6 +7,7 @@ public class GuardMovementScript : MonoBehaviour
 {
     NavMeshAgent agent;
     Animator animator;
+    AudioSource a;
     public GameObject[] patrolCheckpoints, patrolCheckpoints2;
     GameObject[] currentPatrol;
     public GameObject player;
@@ -26,11 +27,13 @@ public class GuardMovementScript : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        a = GetComponent<AudioSource>();
         doorManager = DoorManagerScript.Instance;
         patrolling = true;
         nextDestIndex = 0;
         SetNextPatrolDest();
         agent.speed = patrolSpeed;
+        Invoke("Step", 1);
     }
 
     private void OnEnable()
@@ -140,6 +143,19 @@ public class GuardMovementScript : MonoBehaviour
         patrolling = false;
         doorNext = false;
         agent.speed = pursueSpeed;
+    }
+
+    void Step()
+    {
+        a.Play();
+        if (pursuing)
+        {
+            Invoke("Step", 1);
+        }
+        else
+        {
+            Invoke("Step", .5f);
+        }
     }
 
     
