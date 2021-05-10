@@ -14,6 +14,8 @@ public class GuardLookScript : MonoBehaviour
     public int numLooksPerUpdate;
     public float maxLookDist;
 
+    private bool alarmHasSounded;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +36,11 @@ public class GuardLookScript : MonoBehaviour
                 {
                     if (ContainsLayer(playerLayer, hit.collider.gameObject.layer))
                     {
-                        Messenger.Broadcast(GameEvent.ALARM_SOUNDED);
+                        if (!alarmHasSounded)
+                        {
+                            Messenger.Broadcast(GameEvent.ALARM_SOUNDED);
+                            alarmHasSounded = true;
+                        }
                     }
                 }
             }

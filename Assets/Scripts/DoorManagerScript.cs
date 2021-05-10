@@ -7,6 +7,7 @@ public class DoorManagerScript : MonoBehaviour
     private static DoorManagerScript _instance = null;
     private DoorScript[] doors;
     public bool playerHasKeyCard;
+    private bool alarmHasSounded;
 
     public static DoorManagerScript Instance
     {
@@ -74,9 +75,13 @@ public class DoorManagerScript : MonoBehaviour
 
     private void OnAlarmSounded()
     {
-        foreach (DoorScript door in doors)
+        if (!alarmHasSounded)
         {
-            door.isOpen = false;
+            foreach (DoorScript door in doors)
+            {
+                door.isOpen = false;
+            }
+            alarmHasSounded = true;
         }
     }
 
