@@ -6,7 +6,8 @@ public class Player_MMovementScript : MonoBehaviour
 {
     CharacterController controller;
     public GameObject _camera;
-    public AudioClip crouchAudio;
+    public AudioSource van;
+    public AudioClip crouchAudio, card, painting;
     public float SPEED = 3f;
     bool sneak = false;
     Vector3 normal;
@@ -31,12 +32,14 @@ public class Player_MMovementScript : MonoBehaviour
     {
         Messenger.AddListener(GameEvent.SWITCH_PLAYER, Switch);
         Messenger.AddListener(GameEvent.PAINTING_STOLEN, OnPaintingStolen);
+        Messenger.AddListener(GameEvent.OBTAINED_KEY_CARD, OnKeycardGrab);
     }
 
     private void OnDisable()
     {
         Messenger.RemoveListener(GameEvent.SWITCH_PLAYER, Switch);
         Messenger.RemoveListener(GameEvent.PAINTING_STOLEN, OnPaintingStolen);
+        Messenger.RemoveListener(GameEvent.OBTAINED_KEY_CARD, OnKeycardGrab);
     }
 
     // Update is called once per frame
@@ -102,6 +105,7 @@ public class Player_MMovementScript : MonoBehaviour
             case "NearVan":
                 if (hasStolenPainting)
                 {
+                    van.Play();
                     Messenger.Broadcast(GameEvent.WIN_GAME);
                 }
                 break;
@@ -111,5 +115,11 @@ public class Player_MMovementScript : MonoBehaviour
     private void OnPaintingStolen()
     {
         hasStolenPainting = true;
+        a.PlayOneShot(painting);
+    }
+
+    private void OnKeycardGrab()
+    {
+        a.PlayOneShot(card);
     }
 }

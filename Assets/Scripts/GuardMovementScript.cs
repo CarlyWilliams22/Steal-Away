@@ -17,6 +17,7 @@ public class GuardMovementScript : MonoBehaviour
     int nextDestIndex;
     Vector3 nextDest;
     bool patrolling, pursuing, doorNext;
+    bool played = false;
     DoorScript door;
     DoorManagerScript doorManager;
 
@@ -63,6 +64,7 @@ public class GuardMovementScript : MonoBehaviour
                   //  agent.ResetPath();
                     doorNext = false;
                     door.isOpen = true;
+                    door.PlaySound();
                     StartCoroutine(GoThroughDoorPatrol(door));
                 }
             }
@@ -74,7 +76,17 @@ public class GuardMovementScript : MonoBehaviour
 
             if(doorManager.DistanceToClosestDoor(transform.position) < 2)
             {
-                StartCoroutine(GoThroughDoorPursue(doorManager.ClosestDoorToPoint(transform.position)));
+                DoorScript door = doorManager.ClosestDoorToPoint(transform.position);
+                StartCoroutine(GoThroughDoorPursue(door));
+                if (!played)
+                {
+                    door.PlaySound();
+                    played = true;
+                }
+            }
+            else
+            {
+                played = false;
             }
         }
 

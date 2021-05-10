@@ -5,6 +5,7 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
     Animator animator;
+    AudioSource a;
 
     private const string ANIMATOR_PROPERTY_IS_OPEN = "isOpen";
 
@@ -19,6 +20,7 @@ public class DoorScript : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        a = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -53,6 +55,7 @@ public class DoorScript : MonoBehaviour
             StartCoroutine(hideMessageCoroutine);
         } else
         {
+            PlaySound();
             isOpen = !isOpen;
             if (doorCloseCoroutine != null)
             {
@@ -79,5 +82,10 @@ public class DoorScript : MonoBehaviour
     {
         yield return new WaitForSeconds(seconds);
         isOpen = false;
+    }
+
+    public void PlaySound()
+    {
+        a.Play();
     }
 }

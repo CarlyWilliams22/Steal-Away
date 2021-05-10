@@ -6,6 +6,7 @@ using Assets.Scripts;
 public class Player_VLookScript : MonoBehaviour
 {
     float yAngle = 0;
+    AudioSource a;
     public GameObject head;
     bool currCharacter = false;
     public GameObject _camera;
@@ -26,6 +27,7 @@ public class Player_VLookScript : MonoBehaviour
     {
         cam = _camera.GetComponent<Camera>();
         mouseSensitivity = Prefs.GetFloat(Prefs.Property.MouseSensitivity);
+        a = GetComponent<AudioSource>();
     }
 
     private void OnEnable()
@@ -81,6 +83,7 @@ public class Player_VLookScript : MonoBehaviour
                         // open the closest door
                         DoorScript door = DoorManagerScript.Instance.ClosestDoorToPoint(worldHit.point);
                         door.isOpen = !door.isOpen;
+                        a.Play();
                     }
                 }
             }
