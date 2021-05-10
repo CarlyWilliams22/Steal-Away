@@ -159,7 +159,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 25}
-  m_SizeDelta: {x: 775, y: 375}
+  m_SizeDelta: {x: 775, y: 390}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &90433954
 MonoBehaviour:
@@ -464,24 +464,28 @@ MonoBehaviour:
     Left shift allows
     you to crouch and move more stealthily
 
-    Right click to switch perspectives
-    to the man in the van
+    Left click to take certain objects
 
-    In the van, you have access to the security cameras
-    and a map of the museum, which shows the thief''s location and the location of
-    the painting to steal. Clicking near a door on the map allows you to open it.
-
-    You
-    can find a keycard to open the doors inside the museum
+    Right
+    click to switch perspectives to the man in the van
 
 
-    If the guard sees
-    you or an open door, or you steal something, an alarm sounds and the guard chases
-    you.
+    In the van, you have
+    access to the security cameras and a map of the museum, which shows the thief''s
+    location and the location of the painting to steal. Clicking near a door on the
+    map allows you to open it.
+
+    You can find a keycard to open the doors inside
+    the museum
 
 
-    Your mission is to steal a particular painting and returm to the van
-    without getting caught by the guard. Good luck!'
+    If the guard sees you or an open door, or you steal something,
+    an alarm sounds and the guard chases you.
+
+
+    Your mission is to steal a particular
+    painting and returm to the van as fast as possible without getting caught by
+    the guard. Good luck!'
 --- !u!222 &480355344
 CanvasRenderer:
   m_ObjectHideFlags: 0
