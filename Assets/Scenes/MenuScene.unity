@@ -480,10 +480,8 @@ MonoBehaviour:
     you.
 
 
-    Your mission is to steal a particular painting without getting caught
-
-    Good
-    luck!'
+    Your mission is to steal a particular painting and returm to the van
+    without getting caught by the guard. Good luck!'
 --- !u!222 &480355344
 CanvasRenderer:
   m_ObjectHideFlags: 0

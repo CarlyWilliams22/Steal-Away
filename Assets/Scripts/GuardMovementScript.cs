@@ -60,8 +60,7 @@ public class GuardMovementScript : MonoBehaviour
                     {
                         Messenger.Broadcast(GameEvent.ALARM_SOUNDED);
                     }
-                    agent.ResetPath();
-                    patrolling = false;
+                  //  agent.ResetPath();
                     doorNext = false;
                     door.isOpen = true;
                     StartCoroutine(GoThroughDoorPatrol(door));
@@ -85,14 +84,10 @@ public class GuardMovementScript : MonoBehaviour
 
     IEnumerator GoThroughDoorPatrol(DoorScript door)
     {
-        yield return new WaitForSeconds(.2f);
-        
-        patrolling = true;
         SetNextPatrolDest();
 
         yield return new WaitForSeconds(3f);
         door.isOpen = false;
-        //print("Close");
     }
 
     IEnumerator GoThroughDoorPursue(DoorScript door)
