@@ -62,4 +62,10 @@ public class PauseManagerScript : MonoBehaviour
         Prefs.SetFloat(Prefs.Property.MouseSensitivity, mouseSensitivitySlider.value);
         Messenger.Broadcast(GameEvent.MOUSE_SENSITIVITY_CHANGE, mouseSensitivitySlider.value);
     }
+
+    public void OnClickRestart()
+    {
+        OnPause(false);
+        ApplicationManagerScript.Instance.OnClickPlay();
+    }
 }

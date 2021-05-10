@@ -20613,9 +20613,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 54911677}
-        m_TargetAssemblyTypeName: ApplicationManagerScript, Assembly-CSharp
-        m_MethodName: OnClickPlay
+      - m_Target: {fileID: 54911678}
+        m_TargetAssemblyTypeName: PauseManagerScript, Assembly-CSharp
+        m_MethodName: OnClickRestart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
